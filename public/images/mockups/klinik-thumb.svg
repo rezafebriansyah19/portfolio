@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="100%" stop-color="#171F2D" />
+    </linearGradient>
+    <filter id="shadow6" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg6)" />
+
+  <!-- Mobile Clinic Mockup -->
+  <g filter="url(#shadow6)" transform="translate(265, 25)">
+    <rect width="270" height="450" rx="36" fill="#171F2D" stroke="rgba(59, 130, 246, 0.4)" stroke-width="2" />
+    <rect x="10" y="10" width="250" height="430" rx="28" fill="#0B1220" />
+    <rect x="95" y="18" width="80" height="16" rx="8" fill="#111827" />
+
+    <!-- Content -->
+    <g transform="translate(24, 50)">
+      <text x="0" y="16" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14">Klinik Sehat Keluarga</text>
+      <text x="0" y="32" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Pemesanan Antrean Online</text>
+
+      <!-- Active Queue Box -->
+      <g transform="translate(0, 48)">
+        <rect width="222" height="84" rx="8" fill="#171F2D" stroke="rgba(59, 130, 246, 0.3)" />
+        <text x="14" y="20" fill="#94A3B8" font-size="8">NOMOR ANTREAN AKTIF</text>
+        <text x="14" y="56" fill="#3B82F6" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28">A-024</text>
+        <text x="110" y="44" fill="#F5F3EE" font-size="9" font-weight="700">dr. Siti Rahma, Sp.A</text>
+        <text x="110" y="58" fill="#94A3B8" font-size="8">Poli Anak • Sedang Masuk</text>
+        <rect x="14" y="66" width="194" height="6" rx="3" fill="#1F2A3D" />
+        <rect x="14" y="66" width="130" height="6" rx="3" fill="#3B82F6" />
+      </g>
+
+      <!-- Doctor Booking List -->
+      <g transform="translate(0, 146)">
+        <text x="0" y="12" fill="#F5F3EE" font-weight="700" font-size="11">Dokter Tersedia Hari Ini</text>
+        
+        <!-- Doc 1 -->
+        <g transform="translate(0, 22)">
+          <rect width="222" height="52" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+          <circle cx="26" cy="26" r="14" fill="rgba(212, 179, 107, 0.2)" />
+          <text x="22" y="31" font-size="12">🩺</text>
+          <text x="48" y="22" fill="#F5F3EE" font-weight="700" font-size="10">dr. Hendra Wijaya</text>
+          <text x="48" y="36" fill="#94A3B8" font-size="8">Dokter Umum • Sisa 4 Kuota</text>
+          <rect x="164" y="14" width="46" height="24" rx="4" fill="#D4B36B" />
+          <text x="174" y="29" fill="#0B1220" font-weight="700" font-size="9">Ambil</text>
+        </g>
+
+        <!-- Doc 2 -->
+        <g transform="translate(0, 82)">
+          <rect width="222" height="52" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+          <circle cx="26" cy="26" r="14" fill="rgba(16, 185, 129, 0.2)" />
+          <text x="22" y="31" font-size="12">🦷</text>
+          <text x="48" y="22" fill="#F5F3EE" font-weight="700" font-size="10">drg. Amanda Putri</text>
+          <text x="48" y="36" fill="#94A3B8" font-size="8">Poli Gigi • Sisa 2 Kuota</text>
+          <rect x="164" y="14" width="46" height="24" rx="4" fill="#D4B36B" />
+          <text x="174" y="29" fill="#0B1220" font-weight="700" font-size="9">Ambil</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

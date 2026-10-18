@@ -1,0 +1,44 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.switcher {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(23, 31, 45, 0.85);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-pill;
+  padding: 3px;
+  position: relative;
+  transition: border-color $transition-normal;
+
+  &:hover {
+    border-color: $color-border-gold;
+  }
+}
+
+.langBtn {
+  font-family: $font-family-mono;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.625rem;
+  border-radius: $radius-pill;
+  color: $color-text-muted;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  @include focus-ring;
+
+  &:hover {
+    color: $color-text-primary;
+  }
+
+  &.active {
+    background-color: $color-accent-gold;
+    color: #0B1220;
+    font-weight: 700;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+}

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="100%" stop-color="#171F2D" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4B36B" />
+      <stop offset="100%" stop-color="#E7CF9B" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Subtle grid lines -->
+  <g stroke="rgba(245, 243, 238, 0.04)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Browser Frame -->
+  <g filter="url(#shadow)" transform="translate(60, 40)">
+    <!-- Browser Header -->
+    <rect width="680" height="420" rx="8" fill="#171F2D" stroke="rgba(212, 179, 107, 0.25)" stroke-width="1.5" />
+    <rect width="680" height="36" rx="8" fill="#111827" />
+    <circle cx="20" cy="18" r="5" fill="#EF4444" opacity="0.8" />
+    <circle cx="36" cy="18" r="5" fill="#F59E0B" opacity="0.8" />
+    <circle cx="52" cy="18" r="5" fill="#10B981" opacity="0.8" />
+    <rect x="80" y="8" width="300" height="20" rx="4" fill="#1F2A3D" />
+    <text x="95" y="22" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">alfalah-foundation.org/portal</text>
+
+    <!-- Browser Body -->
+    <rect x="0" y="36" width="680" height="384" fill="#0B1220" />
+    
+    <!-- Hero Banner Inside -->
+    <rect x="24" y="56" width="632" height="130" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+    <rect x="44" y="74" width="70" height="18" rx="3" fill="rgba(212, 179, 107, 0.2)" />
+    <text x="50" y="86" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="8">YAYASAN AL-FALAH</text>
+    
+    <text x="44" y="116" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18">Mencetak Generasi Berakhlak &amp; Berilmu</text>
+    <text x="44" y="136" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Portal Resmi Informasi Lembaga Pendidikan &amp; Akuntabilitas Sosial</text>
+    
+    <rect x="44" y="152" width="110" height="24" rx="4" fill="url(#gold)" />
+    <text x="56" y="168" fill="#0B1220" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10">Profil Pesantren</text>
+
+    <!-- Cards Row -->
+    <g transform="translate(24, 204)">
+      <!-- Card 1 -->
+      <rect width="198" height="190" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+      <rect x="16" y="16" width="28" height="28" rx="4" fill="rgba(212, 179, 107, 0.15)" />
+      <text x="24" y="35" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-size="16">🏛️</text>
+      <text x="16" y="68" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">Madrasah Aliyah</text>
+      <text x="16" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Kurikulum sains modern berpadu dengan kajian kitab turots.</text>
+      <rect x="16" y="150" width="80" height="18" rx="3" fill="#1F2A3D" />
+      <text x="24" y="162" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Akreditasi A</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(217, 0)">
+        <rect width="198" height="190" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+        <rect x="16" y="16" width="28" height="28" rx="4" fill="rgba(16, 185, 129, 0.15)" />
+        <text x="24" y="35" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="16">📖</text>
+        <text x="16" y="68" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">Tahfidz Quran</text>
+        <text x="16" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Program intensif hafalan 30 juz dengan bimbingan bersanad.</text>
+        <rect x="16" y="150" width="90" height="18" rx="3" fill="#1F2A3D" />
+        <text x="24" y="162" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Beasiswa Tersedia</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(434, 0)">
+        <rect width="198" height="190" rx="6" fill="#171F2D" stroke="rgba(245, 243, 238, 0.08)" />
+        <rect x="16" y="16" width="28" height="28" rx="4" fill="rgba(59, 130, 246, 0.15)" />
+        <text x="24" y="35" fill="#3B82F6" font-family="'Plus Jakarta Sans', sans-serif" font-size="16">📊</text>
+        <text x="16" y="68" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">Laporan Donasi</text>
+        <text x="16" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Audit transparansi donatur dan realisasi pembangunan asrama.</text>
+        <rect x="16" y="150" width="80" height="18" rx="3" fill="#1F2A3D" />
+        <text x="24" y="162" fill="#3B82F6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Laporan Terbuka</text>
+      </g>
+    </g>
+  </g>
+</svg>

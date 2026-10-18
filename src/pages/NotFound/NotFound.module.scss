@@ -1,0 +1,46 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.notFoundWrapper {
+  padding: 6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.contentCard {
+  @include card-surface;
+  padding: $space-3xl $space-xl;
+  max-width: 560px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-md;
+  border-color: rgba(212, 179, 107, 0.3);
+}
+
+.code {
+  font-family: $font-family-mono;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: $color-accent-gold;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.desc {
+  color: $color-text-secondary;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}

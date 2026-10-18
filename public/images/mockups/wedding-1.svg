@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="100%" stop-color="#171F2D" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7CF9B" />
+      <stop offset="50%" stop-color="#D4B36B" />
+      <stop offset="100%" stop-color="#9A7B39" />
+    </linearGradient>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg4)" />
+
+  <!-- Elegant Mobile Centerpiece -->
+  <g filter="url(#shadow4)" transform="translate(265, 25)">
+    <!-- Device Frame -->
+    <rect width="270" height="450" rx="36" fill="#171F2D" stroke="url(#goldGrad)" stroke-width="2" />
+    <!-- Screen Area -->
+    <rect x="10" y="10" width="250" height="430" rx="28" fill="#0B1220" />
+    
+    <!-- Ornate Border Motif Inside Screen -->
+    <rect x="22" y="22" width="226" height="406" rx="16" fill="none" stroke="rgba(212, 179, 107, 0.25)" stroke-width="1" />
+    <rect x="26" y="26" width="218" height="398" rx="12" fill="none" stroke="rgba(212, 179, 107, 0.12)" stroke-width="0.5" />
+
+    <!-- Content -->
+    <text x="135" y="70" text-anchor="middle" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="3">WALIMATUL 'URS</text>
+    <text x="135" y="90" text-anchor="middle" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="8">THE WEDDING OF</text>
+
+    <!-- Couple Names in Warm Ivory & Gold -->
+    <text x="135" y="140" text-anchor="middle" fill="#F5F3EE" font-family="serif" font-size="28" font-style="italic">Rayhan</text>
+    <text x="135" y="170" text-anchor="middle" fill="#D4B36B" font-family="serif" font-size="20">&amp;</text>
+    <text x="135" y="208" text-anchor="middle" fill="#F5F3EE" font-family="serif" font-size="28" font-style="italic">Nadia</text>
+
+    <!-- Guest Tag -->
+    <g transform="translate(45, 240)">
+      <rect width="180" height="46" rx="6" fill="#171F2D" stroke="rgba(212, 179, 107, 0.3)" />
+      <text x="90" y="18" text-anchor="middle" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7">KEPADA YTH. BAPAK/IBU/SAUDARA:</text>
+      <text x="90" y="34" text-anchor="middle" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11">Tamu Undangan Terhormat</text>
+    </g>
+
+    <!-- Countdown Timer -->
+    <g transform="translate(45, 305)">
+      <rect width="38" height="38" rx="6" fill="#1F2A3D" />
+      <text x="19" y="20" text-anchor="middle" fill="#F5F3EE" font-weight="800" font-size="12">14</text>
+      <text x="19" y="32" text-anchor="middle" fill="#94A3B8" font-size="7">HARI</text>
+
+      <g transform="translate(47, 0)">
+        <rect width="38" height="38" rx="6" fill="#1F2A3D" />
+        <text x="19" y="20" text-anchor="middle" fill="#F5F3EE" font-weight="800" font-size="12">08</text>
+        <text x="19" y="32" text-anchor="middle" fill="#94A3B8" font-size="7">JAM</text>
+      </g>
+
+      <g transform="translate(94, 0)">
+        <rect width="38" height="38" rx="6" fill="#1F2A3D" />
+        <text x="19" y="20" text-anchor="middle" fill="#F5F3EE" font-weight="800" font-size="12">45</text>
+        <text x="19" y="32" text-anchor="middle" fill="#94A3B8" font-size="7">MENIT</text>
+      </g>
+
+      <g transform="translate(141, 0)">
+        <rect width="38" height="38" rx="6" fill="#1F2A3D" />
+        <text x="19" y="20" text-anchor="middle" fill="#D4B36B" font-weight="800" font-size="12">20</text>
+        <text x="19" y="32" text-anchor="middle" fill="#94A3B8" font-size="7">DETIK</text>
+      </g>
+    </g>
+
+    <!-- Open Invitation CTA Button -->
+    <g transform="translate(50, 365)">
+      <rect width="170" height="34" rx="17" fill="url(#goldGrad)" />
+      <text x="85" y="21" text-anchor="middle" fill="#0B1220" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10">Buka Undangan 💌</text>
+    </g>
+  </g>
+</svg>

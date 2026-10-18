@@ -1,0 +1,168 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.headerSection {
+  padding-top: $space-3xl;
+  padding-bottom: $space-2xl;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid $color-border-subtle;
+  background: radial-gradient(circle at 50% 0%, rgba(23, 31, 45, 0.6) 0%, transparent 70%);
+}
+
+.aboutContent {
+  padding-top: $space-3xl;
+  padding-bottom: $space-4xl;
+}
+
+// Narrative Box
+.narrativeBox {
+  @include card-surface;
+  padding: $space-2xl $space-xl;
+  margin-bottom: $space-3xl;
+  border-color: rgba(212, 179, 107, 0.3);
+  position: relative;
+  overflow: hidden;
+
+  @include min-width($bp-md) {
+    padding: $space-3xl;
+  }
+}
+
+.narrativeLead {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: $color-text-primary;
+  line-height: 1.5;
+  margin-bottom: $space-lg;
+}
+
+.narrativeText {
+  font-size: 1.125rem;
+  color: $color-text-secondary;
+  line-height: 1.8;
+  margin: 0;
+}
+
+// Vision & Mission Grid
+.vmGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-xl;
+  margin-bottom: $space-3xl;
+
+  @include min-width($bp-md) {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+.vmCard {
+  @include card-surface;
+  padding: $space-2xl;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.vmIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: $radius-md;
+  background-color: rgba(212, 179, 107, 0.12);
+  color: $color-accent-gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vmTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.vmText {
+  color: $color-text-secondary;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.missionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.missionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-sm;
+  color: $color-text-secondary;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+
+  svg {
+    color: $color-accent-gold;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+}
+
+// Principles Grid
+.principlesSection {
+  margin-top: $space-2xl;
+}
+
+.principlesTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: $color-text-primary;
+  text-align: center;
+  margin-bottom: $space-2xl;
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-lg;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include min-width($bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.principleCard {
+  @include card-surface;
+  padding: $space-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.principleIcon {
+  color: $color-accent-gold;
+  margin-bottom: $space-xs;
+}
+
+.principleTitle {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.principleDesc {
+  font-size: 0.875rem;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin: 0;
+}

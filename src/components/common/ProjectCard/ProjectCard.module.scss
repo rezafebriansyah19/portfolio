@@ -1,0 +1,121 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.card {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: transform $transition-normal, box-shadow $transition-normal, border-color $transition-normal;
+  transform-style: preserve-3d;
+  will-change: transform;
+
+  &:hover {
+    border-color: rgba(212, 179, 107, 0.35);
+    box-shadow: 0 22px 42px rgba(0, 0, 0, 0.36);
+  }
+
+  &:hover .thumbnail {
+    transform: scale(1.03);
+  }
+
+  &:hover .title {
+    color: $color-accent-gold;
+  }
+}
+
+.thumbnailWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #0E1626;
+  overflow: hidden;
+  border-bottom: 1px solid $color-border-subtle;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform $transition-slow;
+}
+
+.statusBadgeWrapper {
+  position: absolute;
+  top: $space-md;
+  left: $space-md;
+  z-index: 2;
+}
+
+.categoryTag {
+  position: absolute;
+  bottom: $space-md;
+  left: $space-md;
+  z-index: 2;
+  background-color: rgba(11, 18, 32, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 0.2rem 0.5rem;
+  border-radius: $radius-sm;
+  font-family: $font-family-mono;
+  font-size: 0.6875rem;
+  color: $color-text-secondary;
+  border: 1px solid $color-border-subtle;
+}
+
+.content {
+  padding: $space-lg;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  color: $color-text-primary;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: $space-xs;
+  line-height: 1.35;
+  transition: color $transition-fast;
+}
+
+.summary {
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: $space-md;
+  flex-grow: 1;
+  @include line-clamp(3);
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  margin-top: auto;
+  padding-top: $space-md;
+  border-top: 1px solid $color-border-subtle;
+}
+
+.techItem {
+  font-family: $font-family-mono;
+  font-size: 0.6875rem;
+  padding: 0.15rem 0.45rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-sm;
+  color: $color-text-muted;
+}
+
+.viewDetail {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: $color-accent-gold;
+  margin-top: $space-sm;
+}

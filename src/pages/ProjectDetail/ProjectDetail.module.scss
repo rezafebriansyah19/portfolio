@@ -1,0 +1,228 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.projectDetailWrapper {
+  padding-top: $space-2xl;
+  padding-bottom: $space-4xl;
+}
+
+.backRow {
+  margin-bottom: $space-xl;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent-gold;
+  }
+}
+
+.heroHeader {
+  margin-bottom: $space-3xl;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-bottom: $space-md;
+}
+
+.categoryTag {
+  font-family: $font-family-mono;
+  font-size: 0.75rem;
+  color: $color-text-secondary;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.2rem 0.6rem;
+  border-radius: $radius-sm;
+  border: 1px solid $color-border-subtle;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: $color-text-primary;
+  line-height: 1.2;
+  margin-bottom: $space-md;
+}
+
+.summary {
+  font-size: 1.1875rem;
+  color: $color-text-secondary;
+  line-height: 1.7;
+  max-width: 840px;
+  margin-bottom: $space-xl;
+}
+
+.actionsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-md;
+  align-items: center;
+}
+
+.mainMockupBox {
+  @include card-surface;
+  padding: $space-sm;
+  margin-bottom: $space-3xl;
+  border-color: rgba(212, 179, 107, 0.3);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $radius-md;
+    display: block;
+  }
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-3xl;
+  margin-bottom: $space-4xl;
+
+  @include min-width($bp-lg) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.mainCol {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2xl;
+}
+
+.sectionBlock {
+  @include card-surface;
+  padding: $space-xl;
+}
+
+.sectionBlockTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin-bottom: $space-md;
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+}
+
+.sectionText {
+  color: $color-text-secondary;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-sm;
+  color: $color-text-secondary;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+
+  svg {
+    color: $color-accent-gold;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+}
+
+.sidebarCol {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+}
+
+.sidebarCard {
+  @include card-surface;
+  padding: $space-xl;
+}
+
+.sidebarTitle {
+  font-family: $font-family-mono;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-accent-gold;
+  margin-bottom: $space-md;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+}
+
+.techTag {
+  font-family: $font-family-mono;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.65rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-sm;
+  color: $color-text-secondary;
+}
+
+.roleText {
+  color: $color-text-secondary;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.screenshotsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-xl;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.screenshotCard {
+  @include card-surface;
+  padding: $space-sm;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $radius-md;
+  }
+}
+
+.screenshotCaption {
+  padding: $space-sm $space-xs;
+  color: $color-text-muted;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.bottomCtaBanner {
+  @include card-surface;
+  padding: $space-3xl $space-xl;
+  text-align: center;
+  border-color: rgba(212, 179, 107, 0.3);
+  margin-top: $space-3xl;
+}

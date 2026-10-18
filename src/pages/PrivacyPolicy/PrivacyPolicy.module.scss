@@ -1,0 +1,78 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.pageShell {
+  padding: 5rem 0 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.kicker {
+  color: $color-accent-gold;
+  font-family: $font-family-mono;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.summary {
+  max-width: 720px;
+  margin: 0 auto;
+  color: $color-text-secondary;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card,
+.noticeCard {
+  @include card-surface;
+  padding: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iconWrap {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 179, 107, 0.12);
+  border: 1px solid rgba(212, 179, 107, 0.26);
+  border-radius: 0.5rem;
+  color: $color-accent-gold;
+}
+
+.card h2,
+.noticeCard h2 {
+  font-size: 1.25rem;
+}
+
+.noticeCard {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mailLink {
+  color: $color-accent-gold;
+}

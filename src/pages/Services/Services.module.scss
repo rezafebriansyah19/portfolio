@@ -1,0 +1,217 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.headerSection {
+  padding-top: $space-3xl;
+  padding-bottom: $space-2xl;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid $color-border-subtle;
+  background: radial-gradient(circle at 50% 0%, rgba(23, 31, 45, 0.6) 0%, transparent 70%);
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4xl;
+  padding-top: $space-3xl;
+  padding-bottom: $space-4xl;
+}
+
+.serviceBlock {
+  @include card-surface;
+  padding: $space-2xl $space-xl;
+  scroll-margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+
+  @include min-width($bp-md) {
+    padding: $space-3xl;
+  }
+}
+
+.serviceHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-lg;
+  margin-bottom: $space-xl;
+  border-bottom: 1px solid $color-border-subtle;
+  padding-bottom: $space-xl;
+  flex-direction: column;
+
+  @include min-width($bp-md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.serviceIconBox {
+  width: 64px;
+  height: 64px;
+  border-radius: $radius-lg;
+  background-color: rgba(212, 179, 107, 0.12);
+  border: 1px solid rgba(212, 179, 107, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-accent-gold;
+  flex-shrink: 0;
+}
+
+.serviceHeaderText {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+}
+
+.serviceTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.serviceDescription {
+  color: $color-text-secondary;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-xl;
+  margin-bottom: $space-2xl;
+
+  @include min-width($bp-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.detailCard {
+  background-color: rgba(11, 18, 32, 0.6);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-md;
+  padding: $space-xl;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $color-accent-gold;
+  margin-bottom: $space-md;
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  font-family: $font-family-mono;
+}
+
+.checkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-sm;
+  color: $color-text-secondary;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: $color-accent-gold;
+  }
+}
+
+.workflowSection {
+  margin-top: $space-xl;
+  border-top: 1px solid $color-border-subtle;
+  padding-top: $space-xl;
+}
+
+.workflowTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: $color-text-primary;
+  margin-bottom: $space-lg;
+}
+
+.workflowGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-md;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include min-width($bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.workflowCard {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-md;
+  padding: $space-md;
+}
+
+.workflowStepNum {
+  font-family: $font-family-mono;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: $color-accent-gold;
+  margin-bottom: $space-xs;
+}
+
+.workflowStepName {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: $color-text-primary;
+  margin-bottom: $space-xs;
+}
+
+.workflowStepDesc {
+  font-size: 0.8125rem;
+  color: $color-text-secondary;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.serviceAction {
+  margin-top: $space-2xl;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottomConsultation {
+  @include card-surface;
+  padding: $space-3xl $space-xl;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-color: rgba(212, 179, 107, 0.3);
+}
+
+.bottomConsultTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: $color-text-primary;
+  margin-bottom: $space-sm;
+}
+
+.bottomConsultDesc {
+  color: $color-text-secondary;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: $space-xl;
+}

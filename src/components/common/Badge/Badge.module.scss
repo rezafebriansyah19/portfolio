@@ -1,0 +1,45 @@
+@use '../../../styles/variables' as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  font-family: $font-family-mono;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.625rem;
+  border-radius: $radius-sm;
+  line-height: 1.2;
+}
+
+.gold {
+  background-color: rgba(212, 179, 107, 0.12);
+  color: $color-accent-gold;
+  border: 1px solid rgba(212, 179, 107, 0.3);
+}
+
+.real {
+  background-color: $color-status-real-bg;
+  color: $color-status-real;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.demo {
+  background-color: $color-status-demo-bg;
+  color: $color-status-demo;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.concept {
+  background-color: $color-status-concept-bg;
+  color: $color-status-concept;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.neutral {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: $color-text-secondary;
+  border: 1px solid $color-border-subtle;
+}

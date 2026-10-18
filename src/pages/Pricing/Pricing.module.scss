@@ -1,0 +1,294 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.pageShell {
+  padding: 5rem 0 6rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.kicker {
+  color: $color-accent-gold;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: $font-family-mono;
+}
+
+.subtitle {
+  margin: 1rem auto 0;
+  max-width: 700px;
+  color: $color-text-secondary;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.summaryBanner {
+  @include card-surface;
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  @include min-width($bp-md) {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+}
+
+.summaryLabel {
+  color: $color-accent-gold;
+  margin-bottom: 0.35rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: $font-family-mono;
+}
+
+.summaryBanner h2 {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.summaryBanner p:last-child {
+  line-height: 1.7;
+  color: $color-text-secondary;
+}
+
+.helperSection {
+  @include card-surface;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.helperHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: $color-text-primary;
+}
+
+.helperGrid {
+  display: grid;
+  gap: 1rem;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.helperStep {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid $color-border-subtle;
+  border-radius: $radius-lg;
+}
+
+.helperStep span {
+  color: $color-text-secondary;
+}
+
+.optionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.optionButton {
+  border: 1px solid $color-border-subtle;
+  padding: 0.7rem 0.9rem;
+  border-radius: $radius-sm;
+  color: $color-text-secondary;
+  background: rgba(255, 255, 255, 0.01);
+  transition: all $transition-fast;
+
+  &:hover {
+    border-color: rgba(212, 179, 107, 0.4);
+    color: $color-text-primary;
+  }
+
+  &.active {
+    background: rgba(212, 179, 107, 0.1);
+    color: $color-text-primary;
+    border-color: rgba(212, 179, 107, 0.4);
+  }
+}
+
+.recommendationBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(212, 179, 107, 0.05);
+  border: 1px solid rgba(212, 179, 107, 0.3);
+  border-radius: $radius-lg;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+
+  @include max-width($bp-md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.recLabel {
+  color: $color-accent-gold;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: $font-family-mono;
+}
+
+.recommendationBox h3 {
+  margin-top: 0.25rem;
+  font-size: clamp(1.1rem, 1.3vw, 1.4rem);
+}
+
+.recommendationBox p {
+  margin-top: 0.4rem;
+  color: $color-text-secondary;
+}
+
+.recMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+  min-width: 220px;
+
+  @include max-width($bp-md) {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.recMeta strong {
+  font-size: 1.5rem;
+  color: $color-text-primary;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @include min-width($bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include min-width($bp-xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid $color-border-subtle;
+  transition: transform $transition-normal, border-color $transition-normal;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(212, 179, 107, 0.35);
+  }
+}
+
+.featured {
+  border-color: rgba(212, 179, 107, 0.35);
+  background: linear-gradient(180deg, rgba(212, 179, 107, 0.04), rgba(23, 31, 45, 0.9));
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.cardCategory {
+  color: $color-accent-gold;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: $font-family-mono;
+  margin-bottom: 0.4rem;
+}
+
+.cardHeader h2 {
+  font-size: 1.5rem;
+}
+
+.popularTag {
+  background: rgba(212, 179, 107, 0.12);
+  color: $color-text-primary;
+  border: 1px solid rgba(212, 179, 107, 0.3);
+  border-radius: $radius-pill;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid $color-border-subtle;
+}
+
+.priceLabel {
+  color: $color-text-muted;
+  font-size: 0.76rem;
+}
+
+.price {
+  color: $color-text-primary;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.targetAudience,
+.summary,
+.note {
+  color: $color-text-secondary;
+  line-height: 1.7;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0.25rem 0 0.2rem;
+  list-style: none;
+}
+
+.featureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: $color-text-primary;
+}
+
+.featureList svg {
+  color: $color-accent-gold;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.note {
+  font-size: 0.82rem;
+  border-top: 1px solid $color-border-subtle;
+  padding-top: 0.75rem;
+}

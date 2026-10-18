@@ -1,0 +1,330 @@
+export const idTranslations = {
+  common: {
+    back: 'Kembali',
+    backToHome: 'Kembali ke Beranda',
+    backToPortfolio: 'Kembali ke Portofolio',
+    exploreMore: 'Pelajari Lebih Lanjut',
+    requestQuote: 'Diskusikan Kebutuhan',
+    viewDetail: 'Lihat Detail',
+    livePreview: 'Kunjungi Website',
+    sourceCode: 'Repositori Publik',
+    all: 'Semua',
+    close: 'Tutup',
+    loading: 'Memuat...',
+  },
+  nav: {
+    home: 'Beranda',
+    services: 'Layanan',
+    pricing: 'Harga',
+    portfolio: 'Portofolio',
+    about: 'Tentang',
+    process: 'Proses',
+    contact: 'Kontak',
+    privacyPolicy: 'Kebijakan Privasi',
+    discussProject: 'Diskusikan Proyek',
+    openMenu: 'Buka menu navigasi',
+    closeMenu: 'Tutup menu navigasi',
+  },
+  hero: {
+    tagline: 'SIDQAVEN — DIGITAL SOLUTIONS & CREATIVE STUDIO',
+    headline: 'Visi Anda.',
+    headlineAccent: 'Solusi Digital Kami.',
+    supporting:
+      'Kami membantu UMKM, institusi pendidikan, yayasan, organisasi, dan bisnis profesional merancang serta membangun website, aplikasi mobile, UI/UX, dan undangan digital yang fungsional, elegan, dan tepat guna.',
+    ctaPrimary: 'Diskusikan Proyek',
+    ctaSecondary: 'Lihat Portofolio',
+    focusLabel: 'Fokus solusi:',
+    focusUmkm: 'UMKM & Bisnis',
+    focusEdu: 'Institusi & Yayasan',
+    focusOrg: 'Organisasi & Komunitas',
+    focusPersonal: 'Undangan Digital',
+    visual: {
+      badge: 'ARSITEKTUR SIDQAVEN',
+      webArchitecture: 'Arsitektur Web',
+      webArchitectureSub: 'Modular • Skalabel • Cepat',
+      mobile: 'Aplikasi Mobile',
+      mobileSub: 'Sistem Android & iOS',
+      uiux: 'Sistem UI/UX',
+      uiuxSub: 'Token-Driven • Aksesibel',
+      invitation: 'Undangan Digital',
+      invitationSub: 'Editorial • RSVP • Tanpa Iklan',
+      badgeProduction: 'PRODUKSI',
+      badgeNative: 'KECEPATAN NATIVE',
+      badgeFigma: 'SIAP FIGMA',
+      badgeBespoke: 'KHUSUS',
+    },
+  },
+  servicesOverview: {
+    badge: 'LAYANAN UTAMA',
+    title: 'Solusi Digital yang Disesuaikan dengan Kebutuhan Anda',
+    subtitle:
+      'Setiap karya kami dibangun dengan pendekatan terstruktur, arsitektur bersih, dan komunikasi yang terbuka.',
+    viewAll: 'Lihat Seluruh Layanan',
+    keyBenefits: 'Manfaat Utama:',
+  },
+  servicesPage: {
+    badge: 'SPESIFIKASI LAYANAN',
+    title: 'Layanan Digital & Studio Kreatif',
+    subtitle:
+      'Dari kehadiran web profesional hingga aplikasi mobile yang siap pakai, kami menghadirkan solusi teknologi yang relevan dengan skala dan target Anda.',
+    problemTitle: 'Tantangan yang Sering Dihadapi Klien',
+    deliverablesTitle: 'Hasil Kerja & Deliverables',
+    workflowTitle: 'Alur Pengerjaan Tipikal',
+    ctaHeading: 'Punya kebutuhan khusus di luar daftar ini?',
+    ctaDesc:
+      'Kami siap mendengarkan spesifikasi teknis dan kebutuhan fungsional proyek Anda.',
+    ctaButton: 'Konsultasikan Kebutuhan Anda',
+  },
+  pricing: {
+    badge: 'HARGA',
+    title: 'Harga Jelas untuk Pekerjaan Digital',
+    subtitle:
+      'Paket layanan yang fleksibel sesuai kebutuhan proyek, jadwal, dan ruang lingkup teknis Anda.',
+    summaryLabel: 'Cara kami menentukan harga',
+    summaryTitle: 'Estimasi jelas, ruang lingkup yang jujur, dan tanpa janji berlebihan.',
+    summaryText:
+      'Setiap proyek diawali dengan analisis kebutuhan agar ruang lingkup, tanggung jawab, dan hasil kerja dapat ditentukan secara tepat sebelum pengerjaan dimulai.',
+    helperTitle: 'Butuh bantuan memilih paket?',
+    helperStep1: 'Pilih layanan yang Anda butuhkan',
+    helperStep2: 'Pilih tingkat kustomisasi',
+    recommendationLabel: 'Rekomendasi awal',
+    recommendationDisclaimer: 'Ini adalah estimasi awal, bukan penawaran final.',
+    recommendationCta: 'Diskusikan paket ini',
+    startingFrom: 'Mulai dari',
+    categories: {
+      website: 'Website',
+      mobile: 'Aplikasi Mobile',
+      uiux: 'UI/UX',
+      invitation: 'Undangan Digital',
+    },
+    options: {
+      website: 'Website',
+      mobile: 'Aplikasi',
+      uiux: 'UI/UX',
+      invitation: 'Undangan',
+    },
+    complexity: {
+      simple: 'Skala standar',
+      custom: 'Skala khusus',
+    },
+    popular: 'Populer',
+  },
+  featuredProjects: {
+    badge: 'KARYA PILIHAN',
+    title: 'Portofolio & Konsep Studio',
+    subtitle:
+      'Eksplorasi karya nyata, demo aplikasi, dan konsep antarmuka yang dirancang untuk performa tinggi.',
+    viewAll: 'Jelajahi Semua Proyek',
+  },
+  whyUs: {
+    badge: 'PENDEKATAN KAMI',
+    title: 'Mengapa Bermitra dengan SIDQAVEN?',
+    subtitle:
+      'Kami memandang setiap proyek sebagai amanah digital yang menuntut ketelitian teknis, kejujuran spesifikasi, dan rasa tanggung jawab.',
+    principles: [
+      {
+        title: 'Pemahaman Kebutuhan yang Mendalam',
+        desc: 'Kami mendengarkan model bisnis dan target audiens Anda sebelum menulis baris kode pertama.',
+      },
+      {
+        title: 'Desain Berorientasi Pengguna',
+        desc: 'Antarmuka disusun secara intuitif, estetis, dan nyaman diakses oleh seluruh kalangan pengguna.',
+      },
+      {
+        title: 'Pengembangan Terstruktur',
+        desc: 'Kode sumber ditulis dengan standar modern, mudah dipelihara, dan dapat dikembangkan ke depannya.',
+      },
+      {
+        title: 'Komunikasi Terbuka & Transparan',
+        desc: 'Progres dilaporkan secara berkala tanpa jargon yang membingungkan atau janji yang berlebihan.',
+      },
+      {
+        title: 'Jaminan Kualitas Menyeluruh',
+        desc: 'Pengujian performa, kompatibilitas lintas perangkat, dan aksesibilitas sebelum peluncuran.',
+      },
+    ],
+  },
+  process: {
+    badge: 'METODOLOGI KERJA',
+    title: 'Enam Langkah Terstruktur Menuju Solusi Nyata',
+    subtitle:
+      'Proses kerja yang terukur dan disiplin menjamin proyek selesai tepat arah tanpa kejutan yang merugikan.',
+    steps: [
+      {
+        number: '01',
+        title: 'Discovery',
+        desc: 'Mendalami tujuan proyek, audiens sasaran, dan batasan teknis melalui sesi diskusi mendalam.',
+      },
+      {
+        number: '02',
+        title: 'Planning',
+        desc: 'Menyusun peta fitur, arsitektur informasi, jadwal pengerjaan, dan estimasi waktu yang realistis.',
+      },
+      {
+        number: '03',
+        title: 'Design',
+        desc: 'Merancang wireframe, panduan visual, dan prototipe interaktif dengan penekanan pada estetika dan fungsi.',
+      },
+      {
+        number: '04',
+        title: 'Development',
+        desc: 'Mengimplementasikan desain menjadi kode yang bersih, responsif, dan teroptimasi untuk performa tinggi.',
+      },
+      {
+        number: '05',
+        title: 'Testing',
+        desc: 'Melakukan verifikasi fungsi, uji responsivitas multi-layar, dan audit aksesibilitas secara menyeluruh.',
+      },
+      {
+        number: '06',
+        title: 'Launch & Handover',
+        desc: 'Menerapkan proyek ke lingkungan produksi disertai panduan operasional dan dokumentasi lengkap.',
+      },
+    ],
+  },
+  faq: {
+    badge: 'TANYA JAWAB UMUM',
+    title: 'Pertanyaan yang Sering Diajukan',
+    subtitle:
+      'Informasi transparan mengenai estimasi biaya, alur kerja, dan aspek teknis pengerjaan proyek.',
+  },
+  ctaSection: {
+    badge: 'KONSULTASI GRATIS',
+    title: 'Siap Mewujudkan Solusi Digital yang Tepat Guna?',
+    subtitle:
+      'Diskusikan ide proyek atau kebutuhan bisnis Anda langsung bersama tim kami melalui WhatsApp.',
+    button: 'Diskusikan Proyek via WhatsApp',
+  },
+  portfolio: {
+    badge: 'KATALOG PEKERJAAN',
+    title: 'Portofolio & Eksplorasi Karya',
+    subtitle:
+      'Dokumentasi proyek nyata, proyek percontohan (demo), dan konsep desain UI/UX yang telah kami susun secara teliti.',
+    filters: {
+      all: 'Semua Proyek',
+      website: 'Website',
+      mobile: 'Mobile App',
+      uiux: 'UI/UX Design',
+      invitation: 'Undangan Digital',
+    },
+    status: {
+      real: 'PROYEK NYATA',
+      demo: 'DEMO PROYEK',
+      concept: 'KONSEP UI/UX',
+    },
+    emptyState: {
+      title: 'Belum Ada Proyek di Kategori Ini',
+      desc: 'Silakan pilih filter kategori lain untuk melihat dokumentasi karya kami.',
+      reset: 'Tampilkan Semua Kategori',
+    },
+    detail: {
+      summary: 'Ringkasan Proyek',
+      background: 'Latar Belakang & Masalah',
+      solution: 'Solusi yang Diterapkan',
+      keyFeatures: 'Fitur-Fitur Utama',
+      techStack: 'Teknologi yang Digunakan',
+      role: 'Peran & Tanggung Jawab',
+      results: 'Hasil & Verifikasi',
+      screenshots: 'Tangkapan Layar & Mockup',
+      ctaTitle: 'Tertarik dengan model proyek seperti ini?',
+      ctaDesc:
+        'Kami dapat menyesuaikan spesifikasi dan fitur serupa untuk kebutuhan bisnis Anda.',
+    },
+  },
+  about: {
+    badge: 'TENTANG SIDQAVEN',
+    title: 'Membangun Solusi Digital dengan Integritas dan Tujuan',
+    subtitle:
+      'SIDQAVEN hadir sebagai studio digital independen yang berpegang teguh pada nilai kejujuran teknis, estetika yang matang, dan kebermanfaatan nyata.',
+    narrativeTitle: 'Filosofi Studio Kami',
+    narrativeText:
+      'SIDQAVEN meyakini bahwa teknologi seharusnya mempermudah pekerjaan, memperkuat daya saing bisnis, dan membuka peluang baru. Kami merancang serta mengembangkan solusi digital berdasarkan kebutuhan nyata—didukung oleh integritas, desain yang dipikirkan matang, dan komitmen untuk menghadirkan nilai yang bermakna bagi setiap mitra.',
+    visionTitle: 'Visi Kami',
+    visionText:
+      'Menjadi mitra studio digital tepercaya yang diakui atas kejujuran teknis, keanggunan desain, dan solusi yang memberikan dampak positif berkelanjutan bagi pelaku usaha, lembaga, dan masyarakat.',
+    missionTitle: 'Misi Kami',
+    missions: [
+      'Menghadirkan produk digital berkualitas tinggi yang mengedepankan performa, keamanan, dan kemudahan penggunaan.',
+      'Menyediakan konsultasi teknologi yang jujur dan transparan tanpa membebani klien dengan fitur yang tidak diperlukan.',
+      'Mendampingi UMKM, yayasan, dan organisasi dalam memanfaatkan teknologi informasi secara efektif dan terjangkau.',
+      'Terus memperdalam wawasan desain dan rekayasa perangkat lunak demi menjaga standar kualitas karya yang tinggi.',
+    ],
+    principlesTitle: 'Empat Prinsip Utama SIDQAVEN',
+  },
+  contact: {
+    badge: 'KONSULTASI & DISKUSI',
+    title: 'Mari Mulai Percakapan Mengenai Proyek Anda',
+    subtitle:
+      'Isi formulir di bawah ini untuk merangkum kebutuhan Anda. Sistem akan memformat pesan Anda secara rapi dan langsung membukanya di WhatsApp studio kami.',
+    form: {
+      fullName: 'Nama Lengkap',
+      fullNamePlaceholder: 'Contoh: Ahmad Fauzi',
+      organization: 'Nama Bisnis / Lembaga / Organisasi (Opsional)',
+      organizationPlaceholder: 'Contoh: PT Kreasi Mandiri atau Yayasan Nurul Ilmu',
+      service: 'Layanan yang Dibutuhkan',
+      serviceSelectPlaceholder: 'Pilih jenis layanan...',
+      serviceWebsite: 'Website Development (Profil, Katalog, Web App)',
+      serviceMobile: 'Mobile App Development (Android / iOS)',
+      serviceUiux: 'UI/UX Design (Wireframe & Prototipe)',
+      serviceInvitation: 'Undangan Digital (Pernikahan / Acara)',
+      serviceConsultation: 'Konsultasi Umum / Lainnya',
+      description: 'Gambaran Singkat Proyek',
+      descriptionPlaceholder:
+        'Ceritakan tujuan proyek, fitur yang diharapkan, atau kendala yang ingin diselesaikan...',
+      budget: 'Estimasi Anggaran (Opsional)',
+      budgetSelectPlaceholder: 'Pilih rentang anggaran yang sesuai...',
+      budgetTier1: 'Di bawah Rp 3 Juta',
+      budgetTier2: 'Rp 3 Juta – Rp 7 Juta',
+      budgetTier3: 'Rp 7 Juta – Rp 15 Juta',
+      budgetTier4: 'Di atas Rp 15 Juta',
+      budgetDiscuss: 'Ingin didiskusikan terlebih dahulu',
+      preferredLang: 'Bahasa Komunikasi yang Diinginkan',
+      preferredLangId: 'Bahasa Indonesia',
+      preferredLangEn: 'English',
+      submitButton: 'Kirim Pesan via WhatsApp',
+      submittingButton: 'Mempersiapkan WhatsApp...',
+      formNotice:
+        'Catatan: Formulir ini tidak menyimpan data Anda ke server atau database eksternal. Setelah menekan tombol kirim, Anda akan langsung dialihkan ke WhatsApp resmi SIDQAVEN dengan pesan yang telah tersusun rapi.',
+      errors: {
+        fullNameRequired: 'Nama lengkap wajib diisi.',
+        serviceRequired: 'Silakan pilih layanan yang Anda butuhkan.',
+        descriptionRequired:
+          'Deskripsi proyek wajib diisi (minimal 10 karakter agar kami dapat memahami kebutuhan Anda).',
+      },
+    },
+    directContact: {
+      title: 'Informasi Kontak Langsung',
+      desc:
+        'Jika Anda lebih memilih menghubungi langsung tanpa mengisi formulir, silakan gunakan kanal resmi kami berikut:',
+      whatsapp: 'WhatsApp Resmi',
+      email: 'Email Resmi',
+      availability: 'Waktu Respons Cepat: Senin – Sabtu, 09:00 – 18:00 WIB',
+    },
+  },
+  footer: {
+    tagline: 'Building Digital Solutions with Purpose.',
+    shortDesc:
+      'Studio pengembangan website, aplikasi mobile, UI/UX, dan undangan digital berdedikasi tinggi di Indonesia.',
+    servicesTitle: 'Layanan',
+    pagesTitle: 'Halaman',
+    contactTitle: 'Hubungi Kami',
+    socialTitle: 'Media Sosial',
+    rights: 'Hak Cipta Dilindungi Undang-Undang.',
+    noCookieTrackers: 'Tanpa pelacak cookie invasif. Dibuat dengan integritas.',
+    privacyPolicy: 'Kebijakan Privasi',
+  },
+  privacyPolicy: {
+    badge: 'KEAMANAN DATA & PRIVASI',
+    title: 'Kebijakan Privasi',
+    summary:
+      'Kami menjaga informasi pribadi Anda dan hanya menggunakannya untuk mendukung komunikasi proyek yang jelas dan layanan yang terpercaya.',
+    contactTitle: 'Ada pertanyaan mengenai data Anda?',
+    contactText: 'Jika Anda memiliki pertanyaan seputar penanganan data pribadi, silakan hubungi kami di',
+  },
+  notFound: {
+    code: '404',
+    title: 'Halaman Tidak Ditemukan',
+    desc: 'Halaman yang Anda tuju tidak tersedia atau telah dipindahkan ke tautan lain.',
+    button: 'Kembali ke Beranda',
+  },
+};

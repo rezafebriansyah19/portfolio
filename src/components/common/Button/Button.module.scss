@@ -1,0 +1,114 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-sm;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: $radius-md;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all $transition-normal;
+  position: relative;
+  overflow: hidden;
+
+  @include focus-ring;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+// Sizes
+.sm {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: $radius-sm;
+}
+
+.md {
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: $radius-md;
+}
+
+.lg {
+  font-size: 1.0625rem;
+  padding: 0.95rem 1.85rem;
+  border-radius: $radius-lg;
+}
+
+// Variants
+.primary {
+  background-color: $color-accent-gold;
+  color: #0B1220; // Deep dark navy text for contrast
+  border: 1px solid $color-accent-gold;
+  box-shadow: 0 2px 10px rgba(212, 179, 107, 0.25);
+
+  &:hover {
+    background-color: $color-accent-gold-light;
+    border-color: $color-accent-gold-light;
+    box-shadow: 0 4px 16px rgba(212, 179, 107, 0.35);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    background-color: $color-accent-gold-dark;
+  }
+}
+
+.secondary {
+  background-color: $color-bg-surface;
+  color: $color-text-primary;
+  border: 1px solid $color-border-medium;
+
+  &:hover {
+    background-color: $color-bg-surface-elevated;
+    border-color: $color-accent-gold-border;
+    color: $color-accent-gold;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.outline {
+  background-color: transparent;
+  color: $color-accent-gold;
+  border: 1px solid $color-border-gold;
+
+  &:hover {
+    background-color: rgba(212, 179, 107, 0.1);
+    border-color: $color-accent-gold;
+    color: $color-accent-gold-light;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.ghost {
+  background-color: transparent;
+  color: $color-text-secondary;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: $color-text-primary;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

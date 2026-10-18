@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220" />
+      <stop offset="100%" stop-color="#171F2D" />
+    </linearGradient>
+    <filter id="shadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg3)" />
+
+  <!-- Modern Dashboard UI Concept -->
+  <g filter="url(#shadow3)" transform="translate(60, 40)">
+    <rect width="680" height="420" rx="10" fill="#171F2D" stroke="rgba(212, 179, 107, 0.3)" stroke-width="1.5" />
+    
+    <!-- Top Nav -->
+    <rect width="680" height="44" rx="10" fill="#111827" />
+    <text x="24" y="27" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13">SAMUDRA FLEET</text>
+    <text x="140" y="27" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Logistics Telemetry v2.4</text>
+    <rect x="580" y="12" width="76" height="20" rx="4" fill="rgba(212, 179, 107, 0.15)" />
+    <text x="590" y="26" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">LIVE CORRIDOR</text>
+
+    <!-- Sidebar Mini -->
+    <rect x="0" y="44" width="60" height="376" fill="#0E1626" />
+    <circle cx="30" cy="74" r="12" fill="rgba(212, 179, 107, 0.2)" />
+    <text x="25" y="80" fill="#D4B36B" font-size="12">🚢</text>
+    <circle cx="30" cy="116" r="12" fill="rgba(255, 255, 255, 0.05)" />
+    <text x="25" y="122" fill="#94A3B8" font-size="12">📦</text>
+    <circle cx="30" cy="158" r="12" fill="rgba(255, 255, 255, 0.05)" />
+    <text x="25" y="164" fill="#94A3B8" font-size="12">⚙️</text>
+
+    <!-- Main Content Grid -->
+    <g transform="translate(80, 60)">
+      <!-- 3 Metrics Top -->
+      <g>
+        <rect width="180" height="70" rx="6" fill="#0B1220" stroke="rgba(245, 243, 238, 0.06)" />
+        <text x="14" y="24" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Armada Dalam Rute</text>
+        <text x="14" y="52" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20">142 Kapal</text>
+        <text x="120" y="52" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">+98.4% On-Time</text>
+      </g>
+
+      <g transform="translate(195, 0)">
+        <rect width="180" height="70" rx="6" fill="#0B1220" stroke="rgba(245, 243, 238, 0.06)" />
+        <text x="14" y="24" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Kargo Dalam Transit</text>
+        <text x="14" y="52" fill="#D4B36B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20">1.820 TEUs</text>
+      </g>
+
+      <g transform="translate(390, 0)">
+        <rect width="186" height="70" rx="6" fill="#0B1220" stroke="rgba(245, 243, 238, 0.06)" />
+        <text x="14" y="24" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Peringatan Sensor</text>
+        <text x="14" y="52" fill="#3B82F6" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20">0 Anomali</text>
+      </g>
+
+      <!-- Center Map Chart Box -->
+      <g transform="translate(0, 84)">
+        <rect width="576" height="150" rx="6" fill="#0B1220" stroke="rgba(245, 243, 238, 0.06)" />
+        <text x="16" y="24" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11">Koridor Logistik Maritim Nusantara</text>
+        <!-- Schematic Route lines -->
+        <path d="M 40 100 Q 140 60 260 110 T 450 70 T 540 120" fill="none" stroke="rgba(212, 179, 107, 0.4)" stroke-width="2" stroke-dasharray="4 4" />
+        <circle cx="40" cy="100" r="4" fill="#D4B36B" />
+        <text x="30" y="122" fill="#94A3B8" font-size="8">Tj. Priok</text>
+        <circle cx="260" cy="110" r="4" fill="#D4B36B" />
+        <text x="245" y="132" fill="#94A3B8" font-size="8">Tj. Perak</text>
+        <circle cx="450" cy="70" r="4" fill="#D4B36B" />
+        <text x="435" y="92" fill="#94A3B8" font-size="8">Makassar</text>
+        <circle cx="540" cy="120" r="4" fill="#10B981" />
+        <text x="520" y="142" fill="#10B981" font-size="8">Sorong (Tiba)</text>
+      </g>
+
+      <!-- Data Table Preview -->
+      <g transform="translate(0, 246)">
+        <rect width="576" height="90" rx="6" fill="#0B1220" stroke="rgba(245, 243, 238, 0.06)" />
+        <rect width="576" height="24" rx="4" fill="#111827" />
+        <text x="14" y="16" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">KODE KAPAL</text>
+        <text x="160" y="16" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">RUTE TUJUAN</text>
+        <text x="340" y="16" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">STATUS</text>
+        <text x="480" y="16" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">ESTIMASI TIBA</text>
+
+        <!-- Row 1 -->
+        <text x="14" y="46" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10">KM Samudra 08</text>
+        <text x="160" y="46" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Surabaya → Balikpapan</text>
+        <rect x="336" y="34" width="70" height="18" rx="3" fill="rgba(16, 185, 129, 0.15)" />
+        <text x="344" y="46" fill="#10B981" font-size="9" font-weight="600">IN TRANSIT</text>
+        <text x="480" y="46" fill="#F5F3EE" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">14 Okt 06:00</text>
+      </g>
+    </g>
+  </g>
+</svg>

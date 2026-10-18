@@ -1,0 +1,16 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.headerSection {
+  padding-top: $space-3xl;
+  padding-bottom: $space-2xl;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid $color-border-subtle;
+  background: radial-gradient(circle at 50% 0%, rgba(23, 31, 45, 0.6) 0%, transparent 70%);
+}
+
+.portfolioSection {
+  padding-top: $space-3xl;
+  padding-bottom: $space-4xl;
+}

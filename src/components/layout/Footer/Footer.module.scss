@@ -1,0 +1,177 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.footer {
+  background-color: $color-bg-surface;
+  border-top: 1px solid $color-border-subtle;
+  padding-top: $space-3xl;
+  padding-bottom: $space-xl;
+  position: relative;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-2xl;
+  margin-bottom: $space-3xl;
+
+  @include min-width($bp-md) {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  color: $color-text-primary;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, $color-accent-gold 0%, #997b39 100%);
+  border-radius: $radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0B1220;
+  font-weight: 800;
+  font-family: $font-family-mono;
+  font-size: 1rem;
+}
+
+.brandName {
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: $color-text-primary;
+}
+
+.tagline {
+  color: $color-accent-gold;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bio {
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  max-width: 360px;
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.colTitle {
+  font-size: 0.8125rem;
+  font-family: $font-family-mono;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-text-primary;
+  margin: 0;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.linkItem a {
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent-gold;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent-gold;
+  }
+}
+
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  margin-top: $space-xs;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: $radius-sm;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid $color-border-subtle;
+  color: $color-text-secondary;
+  transition: all $transition-fast;
+
+  @include focus-ring;
+
+  &:hover {
+    background-color: rgba(212, 179, 107, 0.1);
+    border-color: $color-accent-gold-border;
+    color: $color-accent-gold;
+  }
+}
+
+.bottomBar {
+  border-top: 1px solid $color-border-subtle;
+  padding-top: $space-xl;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-text-muted;
+  font-size: 0.8125rem;
+
+  @include min-width($bp-md) {
+    flex-direction: row;
+  }
+}
+
+.bottomEthic {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  font-size: 0.75rem;
+  font-family: $font-family-mono;
+}
