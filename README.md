@@ -137,9 +137,9 @@ All studio contact information, WhatsApp numbers, and social links are managed i
 
 ### GitHub Pages
 
-Build the site with `npm run build` and publish the contents of `dist/` using GitHub Pages with **GitHub Actions** as the source. Configure the workflow to set `GITHUB_REPOSITORY` during the build so Vite can derive the repository subpath for assets and client-side routes.
+The `Deploy to GitHub Pages` workflow builds and deploys the site whenever changes are pushed to `main`, and can also be started manually from the Actions tab. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
 
-The build generates `dist/404.html` from the app entry point. Publishing this fallback allows nested routes (for example, `/sidqaven/portfolio/al-falah-foundation-portal`) to load when opened directly or refreshed.
+The Vite base path is derived from the `GITHUB_REPOSITORY` environment variable, so the `portfolio` repository is served under `/portfolio/`. The build generates `dist/404.html` from the app entry point so nested routes (for example, `/portfolio/portfolio/al-falah-foundation-portal`) continue to load when opened directly or refreshed.
 
 ### Other static hosting
 
