@@ -5,7 +5,7 @@ export const idTranslations = {
     backToPortfolio: 'Kembali ke Portofolio',
     exploreMore: 'Pelajari Lebih Lanjut',
     requestQuote: 'Diskusikan Kebutuhan',
-    viewDetail: 'Lihat Detail',
+    viewProject: 'Lihat Proyek',
     livePreview: 'Kunjungi Website',
     sourceCode: 'Repositori Publik',
     all: 'Semua',

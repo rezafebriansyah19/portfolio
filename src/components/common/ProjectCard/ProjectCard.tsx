@@ -115,8 +115,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         )}
 
-        <div className={styles.viewDetail}>
-          <span>{t.common.viewDetail}</span>
+        <div className={styles.viewProject}>
+          <span>{t.common.viewProject}</span>
           <ArrowUpRight size={14} />
         </div>
       </div>

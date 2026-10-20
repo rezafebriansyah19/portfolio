@@ -133,12 +133,22 @@ All studio contact information, WhatsApp numbers, and social links are managed i
 
 ---
 
-## 6. Deployment Guide
+## 6. Deployment
 
-To deploy SIDQAVEN V1 to hosting platforms such as Vercel, Netlify, Cloudflare Pages, or static web servers:
+### GitHub Pages
 
-1. **Build Command**: `npm run build`
-2. **Output Directory**: `dist`
-3. **Single Page Application (SPA) Routing**: Ensure standard fallback rewrites to `index.html` for client-side routing:
-   - **Vercel**: Handled automatically or via `vercel.json` rewrite (`{ "source": "/(.*)", "destination": "/" }`).
-   - **Netlify**: Create a `_redirects` file with `/* /index.html 200`.
+Deployment to GitHub Pages is automated by `.github/workflows/deploy.yml` whenever changes are pushed to `main`.
+
+1. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
+2. Push or merge changes to `main`, or run the **Deploy to GitHub Pages** workflow manually from the **Actions** tab.
+3. Open `https://rezafebriansyah19.github.io/sidqaven/` after the workflow completes.
+
+The Vite base path is derived from the repository name in GitHub Actions, so assets and client-side routes work under the repository subpath. The deployment also publishes an `404.html` fallback so refreshing a nested route (for example, `/sidqaven/portfolio/al-falah-foundation-portal`) continues to load the app.
+
+### Other static hosting
+
+For Vercel, Netlify, Cloudflare Pages, or a static web server:
+
+1. **Build command**: `npm run build`
+2. **Output directory**: `dist`
+3. Configure an SPA fallback to `index.html` for client-side routes (for example, a Netlify `_redirects` rule of `/* /index.html 200`).

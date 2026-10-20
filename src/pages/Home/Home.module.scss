@@ -250,6 +250,34 @@
   position: relative;
 }
 
+.featuredProjectsSection {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 82% 48%, rgba(212, 179, 107, 0.1), transparent 38%),
+    linear-gradient(145deg, rgba(14, 21, 33, 0.85), rgba(8, 13, 22, 0.96));
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 18%;
+    right: -9rem;
+    width: min(42vw, 34rem);
+    aspect-ratio: 1;
+    border: 1px solid rgba(212, 179, 107, 0.14);
+    border-radius: 30%;
+    box-shadow:
+      0 0 0 2rem rgba(212, 179, 107, 0.025),
+      0 0 0 4rem rgba(212, 179, 107, 0.02);
+    transform: perspective(900px) rotateX(58deg) rotateZ(-32deg);
+    pointer-events: none;
+  }
+
+  > :global(.container) {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 .altSection {
   background-color: rgba(23, 31, 45, 0.4);
   border-top: 1px solid $color-border-subtle;
@@ -275,6 +303,14 @@
   margin-top: $space-2xl;
   display: flex;
   justify-content: center;
+}
+
+.featuredProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: $space-xl;
+  perspective: 1600px;
+  perspective-origin: 50% 40%;
 }
 
 // Why Us Grid

@@ -1,5 +1,7 @@
 import type { PortfolioProject } from '../types/portfolio';
 
+const publicImage = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export const PORTFOLIO_DATA: PortfolioProject[] = [
   {
     slug: 'al-falah-foundation-portal',
@@ -43,17 +45,17 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Desain UI/UX, Rekayasa Frontend, dan Konfigurasi Domain/Server',
       en: 'UI/UX Architecture, Frontend Engineering, and Cloud Deployment',
     },
-    thumbnail: '/images/mockups/alfalah-thumb.svg',
+    thumbnail: publicImage('images/mockups/alfalah-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/alfalah-1.svg',
+        url: publicImage('images/mockups/alfalah-1.svg'),
         caption: {
           id: 'Tampilan Beranda Portal dengan Navigasi Unit Yayasan',
           en: 'Homepage Portal Overview with Foundation Unit Breakdown',
         },
       },
       {
-        url: '/images/mockups/alfalah-2.svg',
+        url: publicImage('images/mockups/alfalah-2.svg'),
         caption: {
           id: 'Struktur Transparansi Program dan Informasi Donasi',
           en: 'Transparency Portal Layout and Program Information Structure',
@@ -108,17 +110,17 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Perancangan Konsep, Desain UX Mobile, dan Implementasi Prototipe Fungsional',
       en: 'Concept Ideation, Mobile UX Architecture, and Functional Demo Implementation',
     },
-    thumbnail: '/images/mockups/kopisentra-thumb.svg',
+    thumbnail: publicImage('images/mockups/kopisentra-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/kopisentra-1.svg',
+        url: publicImage('images/mockups/kopisentra-1.svg'),
         caption: {
           id: 'Layar Kasir Cepat dengan Pilihan Kategori dan Varian Minuman',
           en: 'Quick Checkout Screen with Category Filtering and Modifiers',
         },
       },
       {
-        url: '/images/mockups/kopisentra-2.svg',
+        url: publicImage('images/mockups/kopisentra-2.svg'),
         caption: {
           id: 'Panel Pemantauan Stok Bahan Baku Kritis',
           en: 'Ingredient Inventory Threshold Dashboard',
@@ -171,17 +173,17 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Riset Pengguna, Arsitektur Informasi, dan Perancangan Design System',
       en: 'User Research, Information Architecture, and Design System Creation',
     },
-    thumbnail: '/images/mockups/samudra-thumb.svg',
+    thumbnail: publicImage('images/mockups/samudra-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/samudra-1.svg',
+        url: publicImage('images/mockups/samudra-1.svg'),
         caption: {
           id: 'Tampilan Utama Dashboard Monitoring Armada dan Status Pengiriman',
           en: 'Central Dispatch Control Dashboard and Consignment Status',
         },
       },
       {
-        url: '/images/mockups/samudra-2.svg',
+        url: publicImage('images/mockups/samudra-2.svg'),
         caption: {
           id: 'Sistem Desain Atomik Komponen dan Skala Tipografi',
           en: 'Atomic Component Library and Typography System Layout',
@@ -235,17 +237,17 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Desain Visual, Pengembangan Website, dan Pengelolaan Distribusi Link',
       en: 'Visual Design, Frontend Development, and Link Distribution Setup',
     },
-    thumbnail: '/images/mockups/wedding-thumb.svg',
+    thumbnail: publicImage('images/mockups/wedding-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/wedding-1.svg',
+        url: publicImage('images/mockups/wedding-1.svg'),
         caption: {
           id: 'Cover Undangan dengan Personalisasi Nama Tamu Terhormat',
           en: 'Bespoke Cover Presentation with Personalized Guest Tag',
         },
       },
       {
-        url: '/images/mockups/wedding-2.svg',
+        url: publicImage('images/mockups/wedding-2.svg'),
         caption: {
           id: 'Bagian Jadwal Acara, Peta Navigasi, dan Formulir RSVP',
           en: 'Itinerary Schedule, Venue Maps, and RSVP Interface',
@@ -298,10 +300,10 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Desain Web, Frontend Engineering, dan Penataan Konten Korporat',
       en: 'Web Design, Frontend Engineering, and Corporate Copy Structuring',
     },
-    thumbnail: '/images/mockups/binacipta-thumb.svg',
+    thumbnail: publicImage('images/mockups/binacipta-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/binacipta-1.svg',
+        url: publicImage('images/mockups/binacipta-1.svg'),
         caption: {
           id: 'Halaman Profil Utama dengan Sorotan Proyek Konstruksi Unggulan',
           en: 'Corporate Homepage with Featured Structural Engineering Works',
@@ -354,10 +356,10 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
       id: 'Perancangan Antarmuka UI/UX dan Pembuatan Demo Mobile',
       en: 'UI/UX Mobile Design and Interactive Demo Prototyping',
     },
-    thumbnail: '/images/mockups/klinik-thumb.svg',
+    thumbnail: publicImage('images/mockups/klinik-thumb.svg'),
     screenshots: [
       {
-        url: '/images/mockups/klinik-1.svg',
+        url: publicImage('images/mockups/klinik-1.svg'),
         caption: {
           id: 'Layar Pemilihan Dokter dan Pemesanan Slot Konsultasi',
           en: 'Physician Selection and Appointment Booking Flow',

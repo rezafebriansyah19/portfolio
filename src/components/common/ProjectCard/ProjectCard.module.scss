@@ -12,11 +12,14 @@
   position: relative;
   transition: transform $transition-normal, box-shadow $transition-normal, border-color $transition-normal;
   transform-style: preserve-3d;
+  backface-visibility: hidden;
   will-change: transform;
 
   &:hover {
     border-color: rgba(212, 179, 107, 0.35);
-    box-shadow: 0 22px 42px rgba(0, 0, 0, 0.36);
+    box-shadow:
+      0 30px 54px rgba(0, 0, 0, 0.42),
+      0 8px 24px rgba(212, 179, 107, 0.08);
   }
 
   &:hover .thumbnail {
@@ -35,6 +38,7 @@
   background-color: #0E1626;
   overflow: hidden;
   border-bottom: 1px solid $color-border-subtle;
+  transform: translateZ(12px);
 }
 
 .thumbnail {
@@ -71,6 +75,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  transform: translateZ(20px);
 }
 
 .title {
@@ -110,7 +115,7 @@
   color: $color-text-muted;
 }
 
-.viewDetail {
+.viewProject {
   display: flex;
   align-items: center;
   gap: 4px;

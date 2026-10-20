@@ -5,7 +5,7 @@ export const enTranslations = {
     backToPortfolio: 'Back to Portfolio',
     exploreMore: 'Learn More',
     requestQuote: 'Discuss Requirements',
-    viewDetail: 'View Details',
+    viewProject: 'View Project',
     livePreview: 'Visit Live Site',
     sourceCode: 'Public Repository',
     all: 'All',

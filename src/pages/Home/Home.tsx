@@ -155,7 +155,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* 3. Featured Projects Section */}
-      <section className={styles.section} aria-labelledby="featured-projects-title">
+      <section className={`${styles.section} ${styles.featuredProjectsSection}`} aria-labelledby="featured-projects-title">
         <div className="container">
           <SectionHeading
             badge={t.featuredProjects.badge}
@@ -164,7 +164,7 @@ export const Home: React.FC = () => {
             align="center"
           />
 
-          <div className={styles.servicesGrid} style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+          <div className={styles.featuredProjectGrid}>
             {featuredProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
