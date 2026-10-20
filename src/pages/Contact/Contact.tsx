@@ -3,12 +3,21 @@ import { useSearchParams } from 'react-router-dom';
 import { MessageSquare, Mail, Clock, Info, Check, Send } from 'lucide-react';
 import { useLanguage } from '../../i18n';
 import { SITE_CONFIG } from '../../config/site';
+import { PRICING_DATA } from '../../data/pricing';
 import { SectionHeading } from '../../components/common/SectionHeading/SectionHeading';
 import { Button } from '../../components/common/Button/Button';
 import { buildWhatsAppUrl } from '../../utils/whatsapp';
 import type { ConsultationFormData } from '../../utils/whatsapp';
 import { usePageMetadata } from '../../utils/metadata';
 import styles from './Contact.module.scss';
+
+const serviceLabels = {
+  website: 'Website Development',
+  mobile: 'Mobile App Development',
+  uiux: 'UI/UX Design',
+  invitation: 'Digital Invitation',
+} as const;
+const serviceCategories = ['website', 'mobile', 'uiux', 'invitation'] as const;
 
 export const Contact: React.FC = () => {
   const { t, language } = useLanguage();
@@ -36,16 +45,13 @@ export const Contact: React.FC = () => {
   // Sync service from query param if available
   useEffect(() => {
     if (queryService) {
-      const serviceMapping: Record<string, string> = {
-        website: 'Website Development',
-        mobile: 'Mobile App Development',
-        uiux: 'UI/UX Design',
-        invitation: 'Digital Invitation',
-      };
-      if (serviceMapping[queryService]) {
+      const category = serviceCategories.find((service) => service === queryService)
+        ?? PRICING_DATA.find((item) => item.id === queryService)?.category;
+
+      if (category) {
         setFormData((prev) => ({
           ...prev,
-          service: serviceMapping[queryService],
+          service: serviceLabels[category],
         }));
       }
     }
