@@ -16,6 +16,7 @@ export const enTranslations = {
     home: 'Home',
     services: 'Services',
     pricing: 'Pricing',
+    payment: 'Payment',
     portfolio: 'Portfolio',
     about: 'About',
     process: 'Process',
@@ -108,6 +109,17 @@ export const enTranslations = {
       custom: 'Custom scope',
     },
     popular: 'Popular',
+  },
+  payment: {
+    badge: 'PAYMENT',
+    title: 'Payment Methods',
+    subtitle: 'Contact us to receive the payment details for your preferred bank or digital wallet.',
+    types: {
+      bank: 'Bank',
+      wallet: 'E-Wallet',
+    },
+    contactForNumber: 'Contact us for payment details',
+    note: 'Please verify the recipient name and payment amount before sending.',
   },
   featuredProjects: {
     badge: 'FEATURED CASE STUDIES',
@@ -239,6 +251,8 @@ export const enTranslations = {
     narrativeTitle: 'Studio Philosophy',
     narrativeText:
       'SIDQAVEN believes technology should simplify work, strengthen businesses, and open new opportunities. We design and develop digital solutions based on real needs, with integrity, thoughtful design, and a commitment to delivering meaningful value.',
+    studioImageAlt: 'SIDQAVEN visual featuring a professional in front of a modern studio building.',
+    studioImageCaption: 'Building digital solutions with integrity and purpose.',
     visionTitle: 'Our Vision',
     visionText:
       'To be a trusted digital studio recognized for engineering integrity, elegant craftsmanship, and software that delivers lasting value to businesses, institutions, and communities.',

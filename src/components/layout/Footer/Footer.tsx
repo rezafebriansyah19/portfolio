@@ -19,6 +19,7 @@ export const Footer: React.FC = () => {
     { label: t.nav.home, to: '/' },
     { label: t.nav.services, to: '/services' },
     { label: t.nav.pricing, to: '/pricing' },
+    { label: t.nav.payment, to: '/payment' },
     { label: t.nav.portfolio, to: '/portfolio' },
     { label: t.nav.about, to: '/about' },
     { label: t.nav.process, to: '/#process' },

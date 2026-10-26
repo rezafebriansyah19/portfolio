@@ -16,6 +16,7 @@ export const idTranslations = {
     home: 'Beranda',
     services: 'Layanan',
     pricing: 'Harga',
+    payment: 'Pembayaran',
     portfolio: 'Portofolio',
     about: 'Tentang',
     process: 'Proses',
@@ -108,6 +109,17 @@ export const idTranslations = {
       custom: 'Skala khusus',
     },
     popular: 'Populer',
+  },
+  payment: {
+    badge: 'PEMBAYARAN',
+    title: 'Metode Pembayaran',
+    subtitle: 'Hubungi kami untuk mendapatkan detail pembayaran melalui bank atau dompet digital pilihan Anda.',
+    types: {
+      bank: 'Bank',
+      wallet: 'Dompet Digital',
+    },
+    contactForNumber: 'Hubungi kami untuk detail pembayaran',
+    note: 'Pastikan nama penerima dan nominal pembayaran sudah sesuai sebelum mengirim.',
   },
   featuredProjects: {
     badge: 'KARYA PILIHAN',
@@ -239,6 +251,8 @@ export const idTranslations = {
     narrativeTitle: 'Filosofi Studio Kami',
     narrativeText:
       'SIDQAVEN meyakini bahwa teknologi seharusnya mempermudah pekerjaan, memperkuat daya saing bisnis, dan membuka peluang baru. Kami merancang serta mengembangkan solusi digital berdasarkan kebutuhan nyata—didukung oleh integritas, desain yang dipikirkan matang, dan komitmen untuk menghadirkan nilai yang bermakna bagi setiap mitra.',
+    studioImageAlt: 'Visual SIDQAVEN dengan seorang profesional di depan gedung studio modern.',
+    studioImageCaption: 'Membangun solusi digital dengan integritas dan tujuan.',
     visionTitle: 'Visi Kami',
     visionText:
       'Menjadi mitra studio digital tepercaya yang diakui atas kejujuran teknis, keanggunan desain, dan solusi yang memberikan dampak positif berkelanjutan bagi pelaku usaha, lembaga, dan masyarakat.',

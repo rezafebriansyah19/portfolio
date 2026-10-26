@@ -1,5 +1,6 @@
 import React from 'react';
 import { Compass, Target, Shield, BookOpen, Lightbulb, HeartHandshake, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import studioImage from '../../assets/za.png';
 import { useLanguage } from '../../i18n';
 import { SITE_CONFIG } from '../../config/site';
 import { SectionHeading } from '../../components/common/SectionHeading/SectionHeading';
@@ -40,13 +41,35 @@ export const About: React.FC = () => {
       <div className={`container ${styles.aboutContent}`}>
         {/* Core Brand Narrative */}
         <section className={styles.narrativeBox}>
-          <div style={{ marginBottom: '1rem' }}>
-            <Badge variant="gold">FILOSOFI STUDIO</Badge>
+          <div className={styles.narrativeCopy}>
+            <div className={styles.narrativeBadge}>
+              <Badge variant="gold">FILOSOFI STUDIO</Badge>
+            </div>
+            <h2 className={styles.narrativeLead}>
+              "Teknologi seharusnya mempermudah pekerjaan, memperkuat daya saing bisnis, dan membuka peluang baru."
+            </h2>
+            <p className={styles.narrativeText}>{t.about.narrativeText}</p>
           </div>
-          <h2 className={styles.narrativeLead}>
-            "Teknologi seharusnya mempermudah pekerjaan, memperkuat daya saing bisnis, dan membuka peluang baru."
-          </h2>
-          <p className={styles.narrativeText}>{t.about.narrativeText}</p>
+
+          <figure className={styles.studioVisual}>
+            <div className={styles.imageFrame}>
+              <img
+                className={styles.studioImage}
+                src={studioImage}
+                alt={t.about.studioImageAlt}
+                loading="lazy"
+              />
+              <div className={styles.imageReflection} aria-hidden="true" />
+              <div className={styles.imageCaption}>
+                <span className={styles.captionMark} aria-hidden="true">S</span>
+                <span>
+                  <strong>SIDQAVEN</strong>
+                  <small>DIGITAL SOLUTIONS &amp; CREATIVE STUDIO</small>
+                </span>
+              </div>
+            </div>
+            <figcaption className={styles.visualCaption}>{t.about.studioImageCaption}</figcaption>
+          </figure>
         </section>
 
         {/* Vision & Mission Grid */}

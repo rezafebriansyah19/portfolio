@@ -9,6 +9,7 @@ import { About } from '../pages/About/About';
 import { Contact } from '../pages/Contact/Contact';
 import { NotFound } from '../pages/NotFound/NotFound';
 import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy';
+import { Payment } from '../pages/Payment/Payment';
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ export const router = createBrowserRouter([
     element: (
       <PageLayout>
         <Pricing />
+      </PageLayout>
+    ),
+  },
+  {
+    path: '/payment',
+    element: (
+      <PageLayout>
+        <Payment />
       </PageLayout>
     ),
   },

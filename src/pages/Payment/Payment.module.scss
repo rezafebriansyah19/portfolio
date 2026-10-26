@@ -1,0 +1,211 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.pageShell {
+  padding: 5rem 0 6rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.kicker {
+  color: $color-accent-gold;
+  font-family: $font-family-mono;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 1rem auto 0;
+  color: $color-text-secondary;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include min-width($bp-sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include min-width($bp-xl) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @include card-surface;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  border: 1px solid $color-border-subtle;
+}
+
+.cardHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoStage {
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  padding: 0.5rem 0.75rem 0.85rem;
+  perspective: 500px;
+}
+
+.logoTile {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  height: 56px;
+  padding: 0 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 14px;
+  color: #fff;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.45),
+    inset 0 -3px 5px rgba(0, 0, 0, 0.16),
+    0 7px 0 rgba(0, 0, 0, 0.22),
+    0 13px 18px rgba(0, 0, 0, 0.32);
+  transform: rotateX(10deg) rotateY(-12deg);
+  transition: transform $transition-normal, box-shadow $transition-normal;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 42%;
+    height: 32%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.24);
+    content: '';
+    filter: blur(8px);
+  }
+
+  .card:hover & {
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.5),
+      inset 0 -3px 5px rgba(0, 0, 0, 0.16),
+      0 5px 0 rgba(0, 0, 0, 0.22),
+      0 18px 25px rgba(0, 0, 0, 0.38);
+    transform: rotateX(4deg) rotateY(-4deg) translateY(-3px);
+  }
+}
+
+.logoMark {
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+.bsi {
+  background: linear-gradient(145deg, #20a889, #006b5a 75%);
+}
+
+.mandiri {
+  min-width: 58px;
+  width: 58px;
+  border-radius: 50%;
+  color: #064a94;
+  background: linear-gradient(145deg, #ffe979, #f5b900 75%);
+
+  .logoMark {
+    font-size: 1.7rem;
+    font-style: italic;
+  }
+}
+
+.bri {
+  background: linear-gradient(145deg, #1689eb, #0754b5 75%);
+
+  .logoMark {
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+  }
+}
+
+.gopay {
+  color: #fff;
+  background: linear-gradient(145deg, #18b4ed, #0872ca 75%);
+
+  .logoMark {
+    font-style: italic;
+  }
+}
+
+.dana {
+  border-radius: 22px 9px 22px 9px;
+  background: linear-gradient(145deg, #39a6ff, #0871d1 75%);
+}
+
+.shopeepay {
+  min-width: 58px;
+  width: 58px;
+  border-radius: 12px 12px 18px 18px;
+  background: linear-gradient(145deg, #ff9b48, #e95018 75%);
+
+  .logoMark {
+    font-size: 1.6rem;
+  }
+}
+
+.seabank {
+  background: linear-gradient(145deg, #ff754d, #e63932 75%);
+
+  .logoMark {
+    font-size: 1.05rem;
+  }
+}
+
+.methodType {
+  color: $color-text-muted;
+  font-family: $font-family-mono;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card h2 {
+  color: $color-text-primary;
+  font-size: 1.25rem;
+}
+
+.number {
+  color: $color-text-primary;
+  font-family: $font-family-mono;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  margin-top: 1.5rem;
+  color: $color-text-secondary;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
