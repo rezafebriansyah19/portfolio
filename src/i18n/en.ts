@@ -11,6 +11,7 @@ export const enTranslations = {
     all: 'All',
     close: 'Close',
     loading: 'Loading...',
+    whatsappChat: 'Chat on WhatsApp',
   },
   nav: {
     home: 'Home',
@@ -25,11 +26,22 @@ export const enTranslations = {
     discussProject: 'Discuss Project',
     openMenu: 'Open navigation menu',
     closeMenu: 'Close navigation menu',
+    more: 'More',
+  },
+  theme: {
+    label: 'Theme',
+    system: 'System',
+    light: 'Light',
+    dark: 'Dark',
+    switchToLight: 'Switch to light theme',
+    switchToDark: 'Switch to dark theme',
   },
   hero: {
     tagline: 'SIDQAVEN — DIGITAL SOLUTIONS & CREATIVE STUDIO',
     headline: 'Your Vision.',
     headlineAccent: 'Our Digital Craft.',
+    serviceIntro: 'We create:',
+    rotatingServices: ['SMB Websites', 'Mobile Apps', 'Digital Invitations'],
     supporting:
       'We help businesses, educational foundations, community organizations, and professionals engineer purposeful websites, mobile applications, UI/UX systems, and digital invitations that blend aesthetics with engineering rigor.',
     ctaPrimary: 'Discuss Your Project',

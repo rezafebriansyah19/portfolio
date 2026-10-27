@@ -4,7 +4,7 @@
 .switcher {
   display: inline-flex;
   align-items: center;
-  background-color: rgba(23, 31, 45, 0.85);
+  background-color: $color-bg-surface;
   border: 1px solid $color-border-subtle;
   border-radius: $radius-pill;
   padding: 3px;

@@ -11,6 +11,7 @@ export const idTranslations = {
     all: 'Semua',
     close: 'Tutup',
     loading: 'Memuat...',
+    whatsappChat: 'Chat WhatsApp',
   },
   nav: {
     home: 'Beranda',
@@ -25,11 +26,22 @@ export const idTranslations = {
     discussProject: 'Diskusikan Proyek',
     openMenu: 'Buka menu navigasi',
     closeMenu: 'Tutup menu navigasi',
+    more: 'Lainnya',
+  },
+  theme: {
+    label: 'Tema',
+    system: 'Sistem',
+    light: 'Terang',
+    dark: 'Gelap',
+    switchToLight: 'Ganti ke tema terang',
+    switchToDark: 'Ganti ke tema gelap',
   },
   hero: {
     tagline: 'SIDQAVEN — DIGITAL SOLUTIONS & CREATIVE STUDIO',
     headline: 'Visi Anda.',
     headlineAccent: 'Solusi Digital Kami.',
+    serviceIntro: 'Kami membuat:',
+    rotatingServices: ['Website UMKM', 'Aplikasi Mobile', 'Undangan Digital'],
     supporting:
       'Kami membantu UMKM, institusi pendidikan, yayasan, organisasi, dan bisnis profesional merancang serta membangun website, aplikasi mobile, UI/UX, dan undangan digital yang fungsional, elegan, dan tepat guna.',
     ctaPrimary: 'Diskusikan Proyek',

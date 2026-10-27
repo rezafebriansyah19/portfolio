@@ -4,18 +4,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --color-bg-primary: #{$color-bg-primary};
-  --color-bg-surface: #{$color-bg-surface};
-  --color-bg-surface-elevated: #{$color-bg-surface-elevated};
-  --color-accent-gold: #{$color-accent-gold};
-  --color-accent-gold-light: #{$color-accent-gold-light};
-  --color-accent-gold-dark: #{$color-accent-gold-dark};
-  --color-text-primary: #{$color-text-primary};
-  --color-text-secondary: #{$color-text-secondary};
-  --color-text-muted: #{$color-text-muted};
-  --color-border-subtle: #{$color-border-subtle};
-  --color-border-gold: #{$color-border-gold};
+  color-scheme: dark;
+  --color-bg-primary: #0b1220;
+  --color-bg-surface: #171f2d;
+  --color-bg-surface-elevated: #1f2a3d;
+  --color-bg-glass: rgba(23, 31, 45, 0.75);
+  --color-bg-subtle: rgba(255, 255, 255, 0.03);
+  --color-bg-overlay: rgba(11, 18, 32, 0.82);
+  --color-accent-gold: #d4b36b;
+  --color-accent-gold-light: #e7cf9b;
+  --color-accent-gold-dark: #b8964c;
+  --color-accent-gold-glow: rgba(212, 179, 107, 0.15);
+  --color-accent-gold-border: rgba(212, 179, 107, 0.28);
+  --color-text-primary: #f5f3ee;
+  --color-text-secondary: #b5c0d0;
+  --color-text-muted: #8492a8;
+  --color-text-gold: #d4b36b;
+  --color-border-subtle: rgba(245, 243, 238, 0.1);
+  --color-border-medium: rgba(245, 243, 238, 0.18);
+  --color-border-gold: rgba(212, 179, 107, 0.35);
+  --color-scrollbar-thumb: #243044;
+  --color-scrollbar-thumb-hover: #33435c;
+  --color-selection: rgba(212, 179, 107, 0.3);
+  --color-nav-background: rgba(11, 18, 32, 0.92);
+  --color-nav-scrolled-background: rgba(11, 18, 32, 0.98);
+  --color-backdrop: rgba(11, 18, 32, 0.85);
+  --color-input-background: rgba(11, 18, 32, 0.8);
   --font-family-sans: #{$font-family-sans};
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-bg-primary: #f7f8fb;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-elevated: #eef1f6;
+  --color-bg-glass: rgba(255, 255, 255, 0.9);
+  --color-bg-subtle: rgba(22, 33, 54, 0.035);
+  --color-bg-overlay: rgba(255, 255, 255, 0.92);
+  --color-accent-gold: #8a641e;
+  --color-accent-gold-light: #705018;
+  --color-accent-gold-dark: #674910;
+  --color-accent-gold-glow: rgba(138, 100, 30, 0.12);
+  --color-accent-gold-border: rgba(138, 100, 30, 0.28);
+  --color-text-primary: #172033;
+  --color-text-secondary: #48566b;
+  --color-text-muted: #68758a;
+  --color-text-gold: #76520f;
+  --color-border-subtle: rgba(23, 32, 51, 0.1);
+  --color-border-medium: rgba(23, 32, 51, 0.18);
+  --color-border-gold: rgba(138, 100, 30, 0.34);
+  --color-scrollbar-thumb: #c3cad5;
+  --color-scrollbar-thumb-hover: #aab4c3;
+  --color-selection: rgba(138, 100, 30, 0.2);
+  --color-nav-background: rgba(255, 255, 255, 0.92);
+  --color-nav-scrolled-background: rgba(255, 255, 255, 0.98);
+  --color-backdrop: rgba(23, 32, 51, 0.35);
+  --color-input-background: #ffffff;
 }
 
 *,
@@ -56,17 +100,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #243044;
+  background: var(--color-scrollbar-thumb);
   border-radius: 4px;
 
   &:hover {
-    background: #33435c;
+    background: var(--color-scrollbar-thumb-hover);
   }
 }
 
 // Text Selection
 ::selection {
-  background: rgba(212, 179, 107, 0.3);
+  background: var(--color-selection);
   color: var(--color-text-primary);
 }
 

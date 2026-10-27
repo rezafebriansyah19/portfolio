@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowUpRight, ChevronDown, MessageSquare, Code2, Sparkles, Smartphone, Globe, Layout, Mail } from 'lucide-react';
 import { useLanguage } from '../../i18n';
 import { SERVICES_DATA } from '../../data/services';
@@ -16,6 +16,54 @@ import styles from './Home.module.scss';
 export const Home: React.FC = () => {
   const { t, getLocalized } = useLanguage();
   const [openFaqId, setOpenFaqId] = useState<string | null>('pricing');
+  const [serviceText, setServiceText] = useState('');
+  const [serviceIndex, setServiceIndex] = useState(0);
+  const [isDeletingService, setIsDeletingService] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const rotatingServices = t.hero.rotatingServices;
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = (event: MediaQueryList | MediaQueryListEvent) => {
+      setPrefersReducedMotion(event.matches);
+    };
+
+    updatePreference(mediaQuery);
+    mediaQuery.addEventListener('change', updatePreference);
+    return () => mediaQuery.removeEventListener('change', updatePreference);
+  }, []);
+
+  useEffect(() => {
+    const currentService = rotatingServices[serviceIndex];
+
+    if (prefersReducedMotion) {
+      setServiceText(currentService);
+      setIsDeletingService(false);
+      return;
+    }
+
+    let timeout: ReturnType<typeof setTimeout>;
+    if (!isDeletingService && serviceText === currentService) {
+      timeout = setTimeout(() => setIsDeletingService(true), 1600);
+    } else if (isDeletingService && serviceText === '') {
+      setIsDeletingService(false);
+      setServiceIndex((index) => (index + 1) % rotatingServices.length);
+      return;
+    } else {
+      timeout = setTimeout(
+        () => {
+          setServiceText((text) =>
+            isDeletingService
+              ? text.slice(0, -1)
+              : currentService.slice(0, text.length + 1),
+          );
+        },
+        isDeletingService ? 42 : 78,
+      );
+    }
+
+    return () => clearTimeout(timeout);
+  }, [isDeletingService, prefersReducedMotion, rotatingServices, serviceIndex, serviceText]);
 
   usePageMetadata({
     title: t.hero.headline + ' ' + t.hero.headlineAccent,
@@ -62,19 +110,30 @@ export const Home: React.FC = () => {
         <div className={styles.heroGeometric} aria-hidden="true" />
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroContent}>
-            <div className={styles.heroBadge}>
+            <div className={`${styles.heroBadge} ${styles.heroReveal}`}>
               <Sparkles size={14} />
               <span>{t.hero.tagline}</span>
             </div>
 
-            <h1 id="hero-headline" className={styles.headline}>
+            <h1 id="hero-headline" className={`${styles.headline} ${styles.heroReveal}`}>
               {t.hero.headline}{' '}
               <span className={styles.goldHighlight}>{t.hero.headlineAccent}</span>
             </h1>
 
-            <p className={styles.supporting}>{t.hero.supporting}</p>
+            <p className={`${styles.serviceIntro} ${styles.heroReveal}`}>
+              {t.hero.serviceIntro}{' '}
+              <span className={styles.typedService} aria-hidden="true">
+                {serviceText}
+                <span className={styles.typeCursor} />
+              </span>
+              <span className={styles.visuallyHidden}>
+                {rotatingServices.join(', ')}
+              </span>
+            </p>
 
-            <div className={styles.ctaGroup}>
+            <p className={`${styles.supporting} ${styles.heroReveal}`}>{t.hero.supporting}</p>
+
+            <div className={`${styles.ctaGroup} ${styles.heroReveal}`}>
               <Button
                 to="/contact"
                 variant="primary"
@@ -89,7 +148,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Target Audience Segment Chips */}
-            <div className={styles.audienceRow} aria-label="Service focus">
+            <div className={`${styles.audienceRow} ${styles.heroReveal}`} aria-label="Service focus">
               <span className={styles.audienceLabel}>{t.hero.focusLabel}</span>
               <span className={styles.audienceChip}>{t.hero.focusUmkm}</span>
               <span className={styles.audienceChip}>{t.hero.focusEdu}</span>
@@ -98,7 +157,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className={styles.heroVisual}>
+          <div className={`${styles.heroVisual} ${styles.heroVisualReveal}`}>
             <div className={styles.visualCard}>
               <div className={styles.visualHeader}>
                 <div className={styles.visualDots}>

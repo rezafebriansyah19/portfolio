@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
+import { WhatsAppButton } from '../../common/WhatsAppButton/WhatsAppButton';
 import styles from './PageLayout.module.scss';
 
 interface PageLayoutProps {
@@ -23,6 +24,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

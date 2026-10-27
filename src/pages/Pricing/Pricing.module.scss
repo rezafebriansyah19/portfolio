@@ -205,7 +205,7 @@
 
 .featured {
   border-color: rgba(212, 179, 107, 0.35);
-  background: linear-gradient(180deg, rgba(212, 179, 107, 0.04), rgba(23, 31, 45, 0.9));
+  background: linear-gradient(180deg, $color-accent-gold-glow, $color-bg-glass);
 }
 
 .cardHeader {

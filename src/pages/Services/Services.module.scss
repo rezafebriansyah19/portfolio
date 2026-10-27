@@ -7,7 +7,7 @@
   text-align: center;
   position: relative;
   border-bottom: 1px solid $color-border-subtle;
-  background: radial-gradient(circle at 50% 0%, rgba(23, 31, 45, 0.6) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 0%, $color-bg-glass 0%, transparent 70%);
 }
 
 .servicesList {
@@ -90,7 +90,7 @@
 }
 
 .detailCard {
-  background-color: rgba(11, 18, 32, 0.6);
+  background-color: $color-bg-surface-elevated;
   border: 1px solid $color-border-subtle;
   border-radius: $radius-md;
   padding: $space-xl;

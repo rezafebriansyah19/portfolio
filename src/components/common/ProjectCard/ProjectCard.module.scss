@@ -35,7 +35,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
-  background-color: #0E1626;
+  background-color: $color-bg-primary;
   overflow: hidden;
   border-bottom: 1px solid $color-border-subtle;
   transform: translateZ(12px);
@@ -60,7 +60,7 @@
   bottom: $space-md;
   left: $space-md;
   z-index: 2;
-  background-color: rgba(11, 18, 32, 0.85);
+  background-color: $color-bg-overlay;
   backdrop-filter: blur(6px);
   padding: 0.2rem 0.5rem;
   border-radius: $radius-sm;

@@ -7,14 +7,14 @@
   left: 0;
   width: 100%;
   z-index: $z-fixed;
-  background-color: rgba(11, 18, 32, 0.92);
+  background-color: var(--color-nav-background);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid $color-border-subtle;
   transition: all $transition-normal;
 
   &.scrolled {
-    background-color: rgba(11, 18, 32, 0.98);
+    background-color: var(--color-nav-scrolled-background);
     border-bottom-color: rgba(212, 179, 107, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   gap: $space-sm;
+  flex-shrink: 0;
   color: $color-text-primary;
   text-decoration: none;
 
@@ -81,20 +82,22 @@
 .navDesktop {
   display: none;
   align-items: center;
-  gap: $space-lg;
+  gap: clamp(0.65rem, 1vw, 1rem);
+  margin: 0 $space-md;
 
-  @include min-width($bp-lg) {
+  @include min-width($bp-xl) {
     display: flex;
   }
 }
 
 .navLink {
   color: $color-text-secondary;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0.125rem;
   position: relative;
   transition: color $transition-fast;
+  white-space: nowrap;
 
   @include focus-ring;
 
@@ -119,14 +122,74 @@
   }
 }
 
+.moreMenu {
+  position: relative;
+}
+
+.moreToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.moreDropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: -0.75rem;
+  z-index: $z-dropdown;
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+  padding: $space-xs;
+  background: $color-bg-surface;
+  border: 1px solid $color-border-medium;
+  border-radius: $radius-md;
+  box-shadow: $shadow-md;
+}
+
+.dropdownLink {
+  padding: 0.65rem 0.75rem;
+  border-radius: $radius-sm;
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-bg-surface-elevated;
+    color: $color-text-primary;
+  }
+}
+
+.dropdownActive {
+  color: $color-accent-gold;
+  background-color: $color-bg-subtle;
+}
+
 // Actions (Language + CTA)
 .actionsDesktop {
   display: none;
   align-items: center;
-  gap: $space-md;
+  gap: $space-sm;
+  flex-shrink: 0;
 
-  @include min-width($bp-lg) {
+  @include min-width($bp-xl) {
     display: flex;
+  }
+}
+
+.mobileHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+
+  @include min-width($bp-xl) {
+    display: none;
   }
 }
 
@@ -143,7 +206,7 @@
   border: 1px solid $color-border-subtle;
   transition: border-color $transition-fast;
 
-  @include min-width($bp-lg) {
+  @include min-width($bp-xl) {
     display: none;
   }
 
@@ -160,11 +223,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(11, 18, 32, 0.85);
+  background-color: var(--color-backdrop);
   backdrop-filter: blur(8px);
   z-index: $z-modal-backdrop;
 
-  @include min-width($bp-lg) {
+  @include min-width($bp-xl) {
     display: none;
   }
 }
@@ -186,7 +249,7 @@
   z-index: $z-modal;
   overflow-y: auto;
 
-  @include min-width($bp-lg) {
+  @include min-width($bp-xl) {
     display: none;
   }
 }

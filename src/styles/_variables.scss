@@ -1,24 +1,25 @@
 // SIDQAVEN Design System Tokens
 
 // Brand Color Palette
-$color-bg-primary: #0B1220;        // Midnight Navy - Deep dark background
-$color-bg-surface: #171F2D;        // Graphite - Elevated cards, headers, panels
-$color-bg-surface-elevated: #1F2A3D; // Lighter Graphite - Modals, hovers, active cards
-$color-bg-glass: rgba(23, 31, 45, 0.75); // Subtle translucent graphite
-$color-bg-subtle: rgba(255, 255, 255, 0.03); // Subtle overlay
+$color-bg-primary: var(--color-bg-primary);
+$color-bg-surface: var(--color-bg-surface);
+$color-bg-surface-elevated: var(--color-bg-surface-elevated);
+$color-bg-glass: var(--color-bg-glass);
+$color-bg-subtle: var(--color-bg-subtle);
+$color-bg-overlay: var(--color-bg-overlay);
 
 // Accent Color Palette
-$color-accent-gold: #D4B36B;       // Champagne Gold - Primary accent, logos, badges
-$color-accent-gold-light: #E7CF9B; // Champagne Gold Light - Hover states
-$color-accent-gold-dark: #B8964C;  // Champagne Gold Dark - Active/borders
-$color-accent-gold-glow: rgba(212, 179, 107, 0.15); // Subtle ambient glow
-$color-accent-gold-border: rgba(212, 179, 107, 0.28); // Refined border
+$color-accent-gold: var(--color-accent-gold);
+$color-accent-gold-light: var(--color-accent-gold-light);
+$color-accent-gold-dark: var(--color-accent-gold-dark);
+$color-accent-gold-glow: var(--color-accent-gold-glow);
+$color-accent-gold-border: var(--color-accent-gold-border);
 
 // Typography Colors
-$color-text-primary: #F5F3EE;      // Warm Ivory - High contrast titles, headings
-$color-text-secondary: #94A3B8;    // Muted Silver Gray - Body descriptions
-$color-text-muted: #64748B;        // Slate - Captions, tags, subtext
-$color-text-gold: #D4B36B;         // Champagne Gold text
+$color-text-primary: var(--color-text-primary);
+$color-text-secondary: var(--color-text-secondary);
+$color-text-muted: var(--color-text-muted);
+$color-text-gold: var(--color-text-gold);
 
 // Status Colors
 $color-status-real: #10B981;       // Emerald Green for Real Projects
@@ -29,9 +30,9 @@ $color-status-concept: #F59E0B;    // Amber for UI/UX Concepts
 $color-status-concept-bg: rgba(245, 158, 11, 0.12);
 
 // Borders & Dividers
-$color-border-subtle: rgba(245, 243, 238, 0.08);
-$color-border-medium: rgba(245, 243, 238, 0.14);
-$color-border-gold: rgba(212, 179, 107, 0.35);
+$color-border-subtle: var(--color-border-subtle);
+$color-border-medium: var(--color-border-medium);
+$color-border-gold: var(--color-border-gold);
 
 // Typography Scale
 $font-family-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
