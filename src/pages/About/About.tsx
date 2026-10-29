@@ -1,6 +1,6 @@
 import React from 'react';
 import { Compass, Target, Shield, BookOpen, Lightbulb, HeartHandshake, CheckCircle2, ArrowUpRight } from 'lucide-react';
-import studioImage from '../../assets/za.png';
+import studioImage from '../../assets/za.jpg';
 import { useLanguage } from '../../i18n';
 import { SITE_CONFIG } from '../../config/site';
 import { SectionHeading } from '../../components/common/SectionHeading/SectionHeading';

@@ -7,6 +7,7 @@ import { SectionHeading } from '../../components/common/SectionHeading/SectionHe
 import { Button } from '../../components/common/Button/Button';
 import { Badge } from '../../components/common/Badge/Badge';
 import { usePageMetadata } from '../../utils/metadata';
+import { createWhatsAppUrl } from '../../utils/whatsapp';
 import styles from './Services.module.scss';
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -129,7 +130,9 @@ export const Services: React.FC = () => {
                 {/* CTA for this specific service */}
                 <div className={styles.serviceAction}>
                   <Button
-                    to={`/contact?service=${service.id}`}
+                    href={createWhatsAppUrl(
+                      `Halo SIDQAVEN, saya tertarik dengan layanan ${title}. Saya ingin konsultasi mengenai kebutuhan proyek saya.`,
+                    )}
                     variant="primary"
                     size="md"
                     icon={<ArrowRight size={16} />}
@@ -146,7 +149,9 @@ export const Services: React.FC = () => {
             <h2 className={styles.bottomConsultTitle}>{t.servicesPage.ctaHeading}</h2>
             <p className={styles.bottomConsultDesc}>{t.servicesPage.ctaDesc}</p>
             <Button
-              to="/contact"
+              href={createWhatsAppUrl(
+                'Halo SIDQAVEN, saya ingin konsultasi mengenai kebutuhan solusi digital untuk bisnis saya.',
+              )}
               variant="primary"
               size="lg"
               icon={<ArrowUpRight size={18} />}

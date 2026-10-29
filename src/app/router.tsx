@@ -10,6 +10,7 @@ import { Contact } from '../pages/Contact/Contact';
 import { NotFound } from '../pages/NotFound/NotFound';
 import { PrivacyPolicy } from '../pages/PrivacyPolicy/PrivacyPolicy';
 import { Payment } from '../pages/Payment/Payment';
+import { AiVideoShowcase } from '../pages/AiVideoShowcase/AiVideoShowcase';
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,14 @@ export const router = createBrowserRouter([
     element: (
       <PageLayout>
         <Services />
+      </PageLayout>
+    ),
+  },
+  {
+    path: '/services/ai-video-promotion',
+    element: (
+      <PageLayout>
+        <AiVideoShowcase />
       </PageLayout>
     ),
   },

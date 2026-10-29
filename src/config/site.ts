@@ -63,8 +63,8 @@ export interface SiteConfig {
 export const SITE_CONFIG: SiteConfig = {
   name: 'SIDQAVEN',
   legalName: 'SIDQAVEN — Digital Solutions & Creative Studio',
-  domain: 'sidqaven.or.id',
-  siteUrl: 'https://sidqaven.or.id',
+  domain: 'sidqaven.my.id',
+  siteUrl: 'https://sidqaven.my.id',
   tagline: {
     id: 'Membangun Solusi Digital Penuh Makna.',
     en: 'Building Digital Solutions with Purpose.',

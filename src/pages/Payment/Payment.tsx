@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Check, Copy } from 'lucide-react';
 import { useLanguage } from '../../i18n';
 import { usePageMetadata } from '../../utils/metadata';
 import styles from './Payment.module.scss';
 
 const paymentMethods = [
-  { name: 'BSI', mark: 'BSI', theme: 'bsi', type: 'bank' },
-  { name: 'Mandiri', mark: 'M', theme: 'mandiri', type: 'bank' },
-  { name: 'BRI', mark: 'BRI', theme: 'bri', type: 'bank' },
-  { name: 'GoPay', mark: 'Go', theme: 'gopay', type: 'wallet' },
-  { name: 'DANA', mark: 'D', theme: 'dana', type: 'wallet' },
-  { name: 'ShopeePay', mark: 'S', theme: 'shopeepay', type: 'wallet' },
-  { name: 'SeaBank', mark: 'Sea', theme: 'seabank', type: 'bank' },
+  { name: 'BSI', mark: 'BSI', theme: 'bsi', type: 'bank', number: '7284868956' },
+  { name: 'Mandiri', mark: 'M', theme: 'mandiri', type: 'bank', number: '1050023950516' },
+  { name: 'BRI', mark: 'BRI', theme: 'bri', type: 'bank', number: '3834 0105 1155 537' },
+  { name: 'GoPay', mark: 'Go', theme: 'gopay', type: 'wallet', number: '085603088178' },
+  { name: 'DANA', mark: 'D', theme: 'dana', type: 'wallet', number: '085603088178' },
+  { name: 'ShopeePay', mark: 'S', theme: 'shopeepay', type: 'wallet', number: '085603088178' },
+  { name: 'SeaBank', mark: 'Sea', theme: 'seabank', type: 'bank', number: '085603088178' },
 ] as const;
 
 export const Payment: React.FC = () => {
   const { t } = useLanguage();
+  const [copyStatus, setCopyStatus] = useState<{ method: string; success: boolean } | null>(null);
 
   usePageMetadata({
     title: t.payment.title,
     description: t.payment.subtitle,
   });
+
+  const copyNumber = async (methodName: string, number: string) => {
+    try {
+      await navigator.clipboard.writeText(number.replace(/\s/g, ''));
+      setCopyStatus({ method: methodName, success: true });
+    } catch {
+      setCopyStatus({ method: methodName, success: false });
+    }
+  };
 
   return (
     <div className={styles.pageShell}>
@@ -44,7 +55,23 @@ export const Payment: React.FC = () => {
                 </div>
 
                 <h2>{method.name}</h2>
-                <p className={styles.number}>{t.payment.contactForNumber}</p>
+                <p className={styles.number}>{method.number}</p>
+                <button
+                  type="button"
+                  className={styles.copyButton}
+                  onClick={() => void copyNumber(method.name, method.number)}
+                >
+                  {copyStatus?.method === method.name && copyStatus.success
+                    ? <Check size={16} aria-hidden="true" />
+                    : <Copy size={16} aria-hidden="true" />}
+                  <span>
+                    {copyStatus?.method === method.name
+                      ? copyStatus.success
+                        ? t.payment.copied
+                        : t.payment.copyFailed
+                      : t.payment.copyNumber}
+                  </span>
+                </button>
               </article>
             );
           })}

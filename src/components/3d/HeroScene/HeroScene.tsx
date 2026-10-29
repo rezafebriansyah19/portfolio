@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../assets/SIDQAVEN Gold Monogram Branding.png';
+import logo from '../../../assets/SIDQAVEN Gold Monogram Branding.jpg';
 import styles from './HeroScene.module.scss';
 
 export const HeroScene: React.FC = () => (

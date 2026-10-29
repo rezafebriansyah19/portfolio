@@ -18,6 +18,7 @@ export const Footer: React.FC = () => {
   const pageLinks = [
     { label: t.nav.home, to: '/' },
     { label: t.nav.services, to: '/services' },
+    { label: 'Video Promosi AI', to: '/services/ai-video-promotion' },
     { label: t.nav.pricing, to: '/pricing' },
     { label: t.nav.payment, to: '/payment' },
     { label: t.nav.portfolio, to: '/portfolio' },

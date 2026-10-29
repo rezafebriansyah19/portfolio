@@ -11,10 +11,11 @@ import { Button } from '../../components/common/Button/Button';
 import { Badge } from '../../components/common/Badge/Badge';
 import { HeroScene } from '../../components/3d/HeroScene/HeroScene';
 import { usePageMetadata } from '../../utils/metadata';
+import { createWhatsAppUrl } from '../../utils/whatsapp';
 import styles from './Home.module.scss';
 
 export const Home: React.FC = () => {
-  const { t, getLocalized } = useLanguage();
+  const { t, getLocalized, language } = useLanguage();
   const [openFaqId, setOpenFaqId] = useState<string | null>('pricing');
   const [serviceText, setServiceText] = useState('');
   const [serviceIndex, setServiceIndex] = useState(0);
@@ -66,7 +67,9 @@ export const Home: React.FC = () => {
   }, [isDeletingService, prefersReducedMotion, rotatingServices, serviceIndex, serviceText]);
 
   usePageMetadata({
-    title: t.hero.headline + ' ' + t.hero.headlineAccent,
+    title: language === 'id'
+      ? 'Jasa Pembuatan Website & Solusi Digital'
+      : 'Website Development & Digital Solutions',
     description: t.hero.supporting,
   });
 
@@ -135,14 +138,16 @@ export const Home: React.FC = () => {
 
             <div className={`${styles.ctaGroup} ${styles.heroReveal}`}>
               <Button
-                to="/contact"
+                href={createWhatsAppUrl(
+                  'Halo SIDQAVEN, saya ingin konsultasi mengenai layanan digital untuk bisnis saya.',
+                )}
                 variant="primary"
                 size="lg"
                 icon={<ArrowUpRight size={18} />}
               >
                 {t.hero.ctaPrimary}
               </Button>
-              <Button to="/portfolio" variant="secondary" size="lg">
+              <Button to="/services" variant="secondary" size="lg">
                 {t.hero.ctaSecondary}
               </Button>
             </div>
@@ -339,7 +344,9 @@ export const Home: React.FC = () => {
             <h2 className={styles.ctaTitle}>{t.ctaSection.title}</h2>
             <p className={styles.ctaSubtitle}>{t.ctaSection.subtitle}</p>
             <Button
-              to="/contact"
+              href={createWhatsAppUrl(
+                'Halo SIDQAVEN, saya ingin mendiskusikan kebutuhan solusi digital untuk bisnis saya.',
+              )}
               variant="primary"
               size="lg"
               icon={<MessageSquare size={18} />}

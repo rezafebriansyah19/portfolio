@@ -23,6 +23,7 @@ export const idTranslations = {
     process: 'Proses',
     contact: 'Kontak',
     privacyPolicy: 'Kebijakan Privasi',
+    aiVideoShowcase: 'Video Promosi AI',
     discussProject: 'Diskusikan Proyek',
     openMenu: 'Buka menu navigasi',
     closeMenu: 'Tutup menu navigasi',
@@ -41,11 +42,11 @@ export const idTranslations = {
     headline: 'Visi Anda.',
     headlineAccent: 'Solusi Digital Kami.',
     serviceIntro: 'Kami membuat:',
-    rotatingServices: ['Website UMKM', 'Aplikasi Mobile', 'Undangan Digital'],
+    rotatingServices: ['Website UMKM', 'Aplikasi Bisnis', 'Desain UI/UX', 'Undangan Digital', 'Video Promosi AI'],
     supporting:
-      'Kami membantu UMKM, institusi pendidikan, yayasan, organisasi, dan bisnis profesional merancang serta membangun website, aplikasi mobile, UI/UX, dan undangan digital yang fungsional, elegan, dan tepat guna.',
-    ctaPrimary: 'Diskusikan Proyek',
-    ctaSecondary: 'Lihat Portofolio',
+      'SIDQAVEN membantu UMKM dan bisnis membangun kehadiran digital melalui website, aplikasi, desain UI/UX, undangan digital, dan video promosi berbasis AI.',
+    ctaPrimary: 'Konsultasi via WhatsApp',
+    ctaSecondary: 'Lihat Layanan',
     focusLabel: 'Fokus solusi:',
     focusUmkm: 'UMKM & Bisnis',
     focusEdu: 'Institusi & Yayasan',
@@ -77,7 +78,7 @@ export const idTranslations = {
   },
   servicesPage: {
     badge: 'SPESIFIKASI LAYANAN',
-    title: 'Layanan Digital & Studio Kreatif',
+    title: 'Jasa Pembuatan Website dan Solusi Digital',
     subtitle:
       'Dari kehadiran web profesional hingga aplikasi mobile yang siap pakai, kami menghadirkan solusi teknologi yang relevan dengan skala dan target Anda.',
     problemTitle: 'Tantangan yang Sering Dihadapi Klien',
@@ -125,12 +126,14 @@ export const idTranslations = {
   payment: {
     badge: 'PEMBAYARAN',
     title: 'Metode Pembayaran',
-    subtitle: 'Hubungi kami untuk mendapatkan detail pembayaran melalui bank atau dompet digital pilihan Anda.',
+    subtitle: 'Silakan transfer ke rekening bank atau dompet digital berikut.',
     types: {
       bank: 'Bank',
       wallet: 'Dompet Digital',
     },
-    contactForNumber: 'Hubungi kami untuk detail pembayaran',
+    copyNumber: 'Salin nomor',
+    copied: 'Nomor tersalin',
+    copyFailed: 'Gagal menyalin. Silakan salin manual.',
     note: 'Pastikan nama penerima dan nominal pembayaran sudah sesuai sebelum mengirim.',
   },
   featuredProjects: {

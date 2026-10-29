@@ -9,6 +9,9 @@ export interface ConsultationFormData {
   preferredLanguage: 'id' | 'en';
 }
 
+export const createWhatsAppUrl = (message: string): string =>
+  `${SITE_CONFIG.contact.whatsappUrl}?text=${encodeURIComponent(message)}`;
+
 /**
  * Builds a formatted WhatsApp direct link with url-encoded message text
  */
@@ -46,7 +49,5 @@ export const buildWhatsAppUrl = (data: ConsultationFormData): string => {
   ].filter((line): line is string => line !== null);
 
   const fullMessage = messageLines.join('\n');
-  const encoded = encodeURIComponent(fullMessage);
-
-  return `https://wa.me/${SITE_CONFIG.contact.whatsappNumber}?text=${encoded}`;
+  return createWhatsAppUrl(fullMessage);
 };

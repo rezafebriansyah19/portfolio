@@ -1,0 +1,135 @@
+export interface AiVideoShowcaseItem {
+  id: number;
+  youtubeId: string;
+  title: string;
+  category: string;
+  description: string;
+  thumbnailUrl: string;
+  youtubeUrl: string;
+  embedUrl: string;
+}
+
+export const AI_VIDEO_SHOWCASE: AiVideoShowcaseItem[] = [
+  {
+    id: 1,
+    youtubeId: '-MRbt-G7rlk',
+    title: 'Contoh Video 1',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/-MRbt-G7rlk/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/-MRbt-G7rlk',
+    embedUrl: 'https://www.youtube.com/embed/-MRbt-G7rlk',
+  },
+  {
+    id: 2,
+    youtubeId: 'kx1JnFdLCOk',
+    title: 'Contoh Video 2',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/kx1JnFdLCOk/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/kx1JnFdLCOk',
+    embedUrl: 'https://www.youtube.com/embed/kx1JnFdLCOk',
+  },
+  {
+    id: 3,
+    youtubeId: 'D8vpJF1YtJY',
+    title: 'Contoh Video 3',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/D8vpJF1YtJY/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/D8vpJF1YtJY',
+    embedUrl: 'https://www.youtube.com/embed/D8vpJF1YtJY',
+  },
+  {
+    id: 4,
+    youtubeId: 'Z2ZMdYyNcbU',
+    title: 'Contoh Video 4',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Z2ZMdYyNcbU/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/Z2ZMdYyNcbU',
+    embedUrl: 'https://www.youtube.com/embed/Z2ZMdYyNcbU',
+  },
+  {
+    id: 5,
+    youtubeId: '9hgTFqJIniY',
+    title: 'Contoh Video 5',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/9hgTFqJIniY/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/9hgTFqJIniY',
+    embedUrl: 'https://www.youtube.com/embed/9hgTFqJIniY',
+  },
+  {
+    id: 6,
+    youtubeId: 'Z6DQeaoCPqo',
+    title: 'Contoh Video 6',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Z6DQeaoCPqo/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/Z6DQeaoCPqo',
+    embedUrl: 'https://www.youtube.com/embed/Z6DQeaoCPqo',
+  },
+  {
+    id: 7,
+    youtubeId: 'F8p49B_WZ9E',
+    title: 'Contoh Video 7',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/F8p49B_WZ9E/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/F8p49B_WZ9E',
+    embedUrl: 'https://www.youtube.com/embed/F8p49B_WZ9E',
+  },
+  {
+    id: 8,
+    youtubeId: 'MHcyCoI5SpA',
+    title: 'Contoh Video 8',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/MHcyCoI5SpA/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/MHcyCoI5SpA',
+    embedUrl: 'https://www.youtube.com/embed/MHcyCoI5SpA',
+  },
+  {
+    id: 9,
+    youtubeId: 'LWy42s8ukaI',
+    title: 'Contoh Video 9',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/LWy42s8ukaI/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/LWy42s8ukaI',
+    embedUrl: 'https://www.youtube.com/embed/LWy42s8ukaI',
+  },
+  {
+    id: 10,
+    youtubeId: 'IEoektXyrM4',
+    title: 'Contoh Video 10',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/IEoektXyrM4/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/IEoektXyrM4',
+    embedUrl: 'https://www.youtube.com/embed/IEoektXyrM4',
+  },
+  {
+    id: 11,
+    youtubeId: 'C9UzOeYVusc',
+    title: 'Contoh Video 11',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/C9UzOeYVusc/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/C9UzOeYVusc',
+    embedUrl: 'https://www.youtube.com/embed/C9UzOeYVusc',
+  },
+  {
+    id: 12,
+    youtubeId: 'pSXB35u42N4',
+    title: 'Contoh Video 12',
+    category: 'Eksperimen AI',
+    description: 'Contoh video promosi berbasis AI.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/pSXB35u42N4/hqdefault.jpg',
+    youtubeUrl: 'https://www.youtube.com/shorts/pSXB35u42N4',
+    embedUrl: 'https://www.youtube.com/embed/pSXB35u42N4',
+  },
+];
+
+export default AI_VIDEO_SHOWCASE;

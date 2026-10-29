@@ -62,7 +62,6 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
         },
       },
     ],
-    liveUrl: 'https://example.org/yayasan-demo',
     results: {
       id: 'Seluruh materi informasi yayasan kini terpusat dalam satu tautan resmi, mengurangi pertanyaan berulang terkait administrasi penerimaan santri baru.',
       en: 'All foundation publications are now consolidated within a single verified domain, substantially reducing repetitive administrative inquiries during intake periods.',
@@ -254,7 +253,6 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
         },
       },
     ],
-    liveUrl: 'https://example.org/invitation-demo',
     results: {
       id: 'Tercatat lebih dari 500 tamu membuka undangan dengan tingkat konfirmasi kehadiran (RSVP) yang akurat bagi panitia keluarga.',
       en: 'Successfully engaged over 500 guests with high RSVP submission accuracy, simplifying catering planning for the family organizers.',
@@ -310,7 +308,6 @@ export const PORTFOLIO_DATA: PortfolioProject[] = [
         },
       },
     ],
-    liveUrl: 'https://example.org/binacipta-demo',
     results: {
       id: 'Memenuhi standar verifikasi digital lelang dan memperkuat reputasi perusahaan di hadapan panitia pengadaan.',
       en: 'Satisfied tender audit digital verification requirements and fortified corporate credibility before institutional procurement boards.',

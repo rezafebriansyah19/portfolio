@@ -194,12 +194,42 @@
 }
 
 .number {
+  margin-bottom: 0;
   color: $color-text-primary;
   font-family: $font-family-mono;
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   overflow-wrap: anywhere;
+}
+
+.copyButton {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid rgba(214, 180, 106, 0.35);
+  border-radius: $radius-md;
+  background: rgba(214, 180, 106, 0.08);
+  color: $color-accent-gold;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color $transition-fast, border-color $transition-fast;
+
+  &:hover {
+    border-color: $color-accent-gold;
+    background: rgba(214, 180, 106, 0.15);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-gold;
+    outline-offset: 3px;
+  }
 }
 
 .note {

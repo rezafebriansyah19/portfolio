@@ -70,6 +70,7 @@ export const Navbar: React.FC = () => {
   const secondaryNavItems = [
     { to: '/payment', label: t.nav.payment },
     { to: '/about', label: t.nav.about },
+    { to: '/services/ai-video-promotion', label: 'Video Promosi AI' },
     { to: '/#process', label: t.nav.process },
   ];
 
